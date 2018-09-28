@@ -327,7 +327,7 @@ var recipeApp = {
     console.log(mealType);
 
     $.ajax({
-      url:"https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?diet="+diet+"&excludeIngredients="+exclusions+"&instructionsRequired=true&intolerances="+intolerances+"&limitLicense=false&number=18&offset=0&query="+searchedFood+"&type="+mealType,
+      url:"https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?diet="+diet+"&excludeIngredients="+exclusions+"&instructionsRequired=true&intolerances="+intolerances+"&limitLicense=false&number=12&offset=0&query="+searchedFood+"&type="+mealType,
       beforeSend: function(xhr) { 
         xhr.setRequestHeader("X-Mashape-Key", "B6aQubD0MzmshaDtr6oXZPh36w3Qp17hKoqjsnoDFeTMOaQT32");
       },
@@ -397,7 +397,7 @@ var recipeApp = {
     // A comma-separated list of ingredients that the recipes should contain.
 
     $.ajax({
-        url:"https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients=false&ingredients="+ingredients+"&limitLicense=false&number=18&ranking=1",
+        url:"https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients=false&ingredients="+ingredients+"&limitLicense=false&number=12&ranking=1",
         // Ranking = Whether to maximize used ingredients (1) or minimize missing ingredients (2) first.
         beforeSend: function(xhr) { 
           xhr.setRequestHeader("X-Mashape-Key", "B6aQubD0MzmshaDtr6oXZPh36w3Qp17hKoqjsnoDFeTMOaQT32");
