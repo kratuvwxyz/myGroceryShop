@@ -1,16 +1,44 @@
 # My Grocery Shop
 
-This application allows the user to search the Spoonacular API for recipes based on several parameters like keyword, 
-diet and restriction, as well as by ingredient.
-
-Then the user may select several or all ingredients per recipe to be added to a master list. 
-
-The user may also save their own recipes and add saved recipe ingredients to their master list. 
+- This application allows the user to search the Spoonacular API for recipes based on several parameters like keyword, diet and restriction, as well as by ingredient.
+- Then the user may select several or all ingredients per recipe to be added to a master list. 
+- The user may also save their own recipes and add saved recipe ingredients to their master list. 
 
 # Future Development
 
-The user will be able to recieve their master list via SMS or export it to Wunderlist. 
+- The user will be able to recieve their master list via SMS or export it to Wunderlist. 
+- The user can send their list to a service like Instacart for delivery. 
+- Master list will be sorted by grocery section.
 
-The user can send their list to a service like Instacart for delivery. 
+### Built with
 
-Master list will be sorted by grocery section.
+- HTML5
+- CSS3
+- w3.css
+- JavaScript
+- jQuery
+- Firebase
+- AJAX
+- APIs
+    - EDAMAM
+    - SPOONACULAR
+- SolariBoard CSS/JS
+- Github for versioning
+
+### Group Project Team
+
+- [Zenna Duke](https://github.com/zenjduke)
+- [Casey Trahan](https://github.com/casethebase)
+
+## CONTACT
+
+**I'd Love To Hear From You.**
+Thank you for your time and consideration. My Mantra is simple, *no one is perfect, and criticism is always welcome and expected*. Your opinion matters. I hope you enjoy my work. Please contact at <a href="mailto:github@desaign.studio?Subject=Message from Github">github@desaign.studio</a>.
+
+<hr/>
+
+<img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2018. <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a>. All Rights Reseverd. &#160;
+<a href="https://www.facebook.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://kratuvwxyz.github.io/assets/images/footer/facebook.svg" alt="facebook" width="25" /></a> &#160;
+<a href="https://www.twitter.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://kratuvwxyz.github.io/assets/images/footer/twitter.svg" alt="twitter" width="25" /></a> &#160;
+<a href="https://www.linkedin.com/in/desaignstudio/" target="_blank" style="text-decoration:none;"><img src="https://kratuvwxyz.github.io/assets/images/footer/linkedin.svg" alt="facebook" width="25" /></a> &#160;
+<a href="http://desaign.in" target="_blank" style="text-decoration:none;"><img src="https://kratuvwxyz.github.io/assets/images/footer/blog.svg" alt="DESAIGN BLOG" width="25" /></a> &#160;
