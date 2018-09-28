@@ -1,14 +1,16 @@
 # My Grocery Shop
 
-- This application allows the user to search the Spoonacular API for recipes based on several parameters like keyword, diet and restriction, as well as by ingredient.
+This app will help to avoid the west of food and increase the test of home cooking.
+
+## Getting Started
+
+- This application allows the user to search the EDAMAM API for recipes based on several parameters like keyword, diet and restriction, as well as by ingredient.
 - Then the user may select several or all ingredients per recipe to be added to a master list. 
 - The user may also save their own recipes and add saved recipe ingredients to their master list. 
 
-# Future Development
+### Prerequisites
 
-- The user will be able to recieve their master list via SMS or export it to Wunderlist. 
-- The user can send their list to a service like Instacart for delivery. 
-- Master list will be sorted by grocery section.
+- You need to enable JavaScript to run this app.
 
 ### Built with
 
@@ -25,10 +27,32 @@
 - SolariBoard CSS/JS
 - Github for versioning
 
-### Group Project Team
+### Authors
 
-- [Zenna Duke](https://github.com/zenjduke)
-- [Casey Trahan](https://github.com/casethebase)
+* **Kratu Desai** - *Front-End Developer* - [KRATUVWXYZ](https://github.com/kratuvwxyz)
+
+- **Zenna Duke** - *Back-End Developer* - [zenjduke](https://github.com/zenjduke)
+- **Casey Trahan** - *Back-End Developer* - [casethebase](https://github.com/casethebase)
+
+### Acknowledgments
+
+- [w3schools.com](https://www.w3schools.com/)
+
+
+### Future Development
+
+- The user will be able to recieve their master list via SMS or export it to Wunderlist. 
+- The user can send their list to a service like Instacart for delivery. 
+- Master list will be sorted by grocery section.
+
+
+### Contributing
+
+Please read [CONTRIBUTING](https://github.com/kratuvwxyz/Contributing) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/kratuvwxyz/License) for details
 
 ## CONTACT
 
