@@ -1,0 +1,104 @@
+
+
+/*-----------------------------------
+
+/* POP UP MODAL SEARCH FORMS */
+
+ /* New Recipe Search Modal */
+    .searchModal,
+    .byIngredientModal,
+    .nutritionModal,
+    .yourRecipeModal,
+    .addedRecipeModal
+    .addedIngredientsModal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(10, 158, 77); /* Fallback color */
+        background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+        color: rgb(10, 158, 77);
+    }
+
+
+    /* The Close Button */
+    .searchClose, 
+    .byIngredientClose, 
+    .nutritionClose, 
+    .addedRecipesClose
+    .addedIngredientsClose {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 22px;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .addClose {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 22px;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .addClose:hover,
+    .addClose:focus,
+    .nutritionClose:hover,
+    .nutritionClose:focus,
+    .searchClose:hover,
+    .searchClose:focus,
+    .ingredientClose:hover,
+    .ingredientClose:focus
+    .addedRecipesClose:hover,
+    .addedRecipesClose:focus,
+    .addedIngredientsClose:hover,
+    .addedIngredientsClose:focus, {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.button{
+    border:1px solid #333;
+    background:#6479fd;
+  }
+  .button:hover{
+    background:#a4a9fd;
+  }
+  
+  input[type=text]{
+    border:1px solid #333;
+    display:inline-block;
+    margin:5px;
+  }
+  #w3-btn{
+    border:1px solid #000;
+    background:#ff9999;
+    margin:5px;
+  }
+
+  .w3-btn{
+    border:1px rgb(32, 196, 81);
+    background:rgb(32, 196, 81);
+    color: white;
+    font-weight: 600;
+    margin:5px;
+  }
+  
+  #w3-btn:hover{
+    border:1px solid #000;
+    background:#ffacac;
+  }
+
+  #complex-search-form {
+      text-align: left;
+  }

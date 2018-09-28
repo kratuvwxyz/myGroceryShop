@@ -1,0 +1,810 @@
+<!doctype html>
+
+<!--
+
+        ╥ DESIGNED AND DEVELOPED BY...
+        ║ 
+        ║   /       ───
+        ║ ╓──╖ ╓───────╖ ╓╖ ╓───╖ ╓───╖ TM
+        ║ ║  ║ ║       ║ ╙╜ ║   ║ ║   ║  
+    ╓───╫─╫──╜ ╙──╖ ╓──╫──╖ ║   ║ ║   ║
+    ║   ║ ║       ║ ║  ║  ║ ║   ║ ║   ║
+    ║   ║ ╙───────╜ ╙──╜  ║ ╙───╫─╜   ║ 
+    ║   ║ SINCE 20ELEVEN  ║     ║     ╙ LLC © HTTPS://DESAIGN.APP 
+    ╙───╜                 ╙─────╜             ALL RIGHTS RESERVED
+  
+-->
+
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" dir="ltr" lang="en-US"> <!--<![endif]-->
+
+<!--=============================================-->
+<!--=============================================-->
+<!--=============================================-->
+
+<head>
+
+    <!--:::::::::::::::::::::::::::::::::::::::
+  Required meta tags
+::::::::::::::::::::::::::::::::::::::::-->
+  
+    <meta charset="utf-8">
+    <!--just for auto-refresh or redirect use the following meta tag-->
+    <!--<meta http-equiv="refresh" content="10" />-->
+    <!--<meta http-equiv="refresh" content="0; url=http://website.com/" />-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--mobile specific metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--basic page needs-->
+    <meta name="author" content="#teamAwesome" />
+	<meta name="description" content="My Grocery Shop" />
+	<meta name="keywords" content="Grocery, List, My, Kitchen, Food, Cook, Place, Visit, Recepe" />
+    
+    <!--favicons-->
+	<link rel="shortcut icon" type="image/ico" href="assets/images/party.ico" />
+    
+    <!--:::::::::::::::::::::::::::::::::::::::
+  Stylesheets
+::::::::::::::::::::::::::::::::::::::::-->
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <!--Awesome Fonts Library-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--++++++-->
+
+    <!--Reset CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    
+    <!--++++++-->
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> 
+    
+    <!--W3.CSS-->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/w3.css">
+
+    <!--BootStrap CSS-->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    
+    <!--++++++-->
+
+    <!--Developer CSS-->
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <!--++++++-->
+    
+    <style type="text/css">
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('');
+            background-color: whitesmoke;
+            letter-spacing: 1px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'IBM Plex Serif', serif;
+        }
+        
+        .confectionary {
+            background-image: url(https://raw.githubusercontent.com/kratuvwxyz/assets2/master/images/background/pattern/confectionary.png);
+            background-color: whitesmoke;
+        }
+
+        .a1a {
+            background-image: url("assets/images/background/concrete_wall/concrete_wall_@2X.png");
+        }
+
+        .a2a {
+            background-image: url("assets/images/background/concrete_wall_2/concrete_wall_2_@2X.png");
+        }
+
+        .a3a {
+            background-image: url("assets/images/background/wall4/wall4_@2X.png");
+        }
+
+        .a4a {
+            background-image: url("assets/images/background/pink_rice/pink_rice.png");
+        }
+
+        .a5a {
+            background-image: url("assets/images/background/ricepaper/ricepaper_@2X.png");
+            background-color: whitesmoke;
+        }
+
+        footer {
+            background-image: url(https://raw.githubusercontent.com/kratuvwxyz/assets2/master/images/background/pattern/confectionary.png);
+            background-color: khaki;
+        }
+        
+    </style>
+    
+    <!--++++++-->
+      
+  
+    <!--:::::::::::::::::::::::::::::::::::::::
+  JavaScript
+::::::::::::::::::::::::::::::::::::::::-->
+  	
+  	<!--modernizr-->
+    <script src="assets/js/modernize.js"></script>
+      
+    <!-- Firebase Reference -->
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--SVG-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.6/svg.min.js"></script>
+    <script src="assets/js/SVG.js"></script>
+    
+    <!--++++++-->
+
+    <!--:::::::::::::::::::::::::::::::::::::::
+  Document Title
+::::::::::::::::::::::::::::::::::::::::-->
+
+  <title>My Grocery Shop</title>
+
+</head>
+
+<!--=============================================-->
+<!--=============================================-->
+<!--=============================================-->
+
+<body id="w3-top">
+  
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+  
+    <!--:::::::::::::::::::::::::::::::::::::::
+  Document Wrapper
+::::::::::::::::::::::::::::::::::::::::-->
+
+
+    <!-- Navigation -->
+
+	<div class="w3-top">
+
+		<header class="w3-padding">
+
+			<nav>
+				
+				<!-- navigation left menu -->
+				<div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-round-large w3-margin" style="display:none;" id="leftMenu">
+					<button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-xlarge w3-dark-gray">
+						<i class="far fa-times-circle"></i>
+					</button>
+					<div class="w3-bar w3-black w3-padding-small">MENU</div>
+					<a href="#" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-border-bottom w3-hover-yellow">
+						<i class="fa fa-hashtag w3-text-red"></i> HOME</a>
+					<a href="#aboutApp" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-border-bottom w3-hover-yellow">
+						<i class="fa fa-check-circle w3-text-red"></i> About</a>
+					<a href="#mainList1" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-border-bottom w3-hover-yellow">
+                        <i class="fas fa-utensils w3-text-red"></i> Search Recipes</a>
+                    <a href="#mainList2" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-border-bottom w3-hover-yellow">
+                            <i class="fas fa-chart-pie w3-text-red"></i> Nutrition</a>  			
+					<a href="#addARecipebutton" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-border-bottom w3-hover-yellow">
+						<i class="fas fa-plus w3-text-red"></i> Add Recipes</a>	
+					<a href="#recipe-tracker" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-border-bottom w3-hover-yellow" id="addedRecipes">
+						<i class="fas fa-book w3-text-red"></i> My Recipes</a>
+					<a href="#checkout" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-border-bottom w3-hover-yellow">
+						<i class="fas fa-shopping-cart w3-text-red"></i> View My List</a>
+					<div class="w3-bar w3-black w3-padding-small">CONTACT</div>
+					<a href="#" class="w3-bar-item w3-button w3-large w3-border-bottom w3-hover-yellow">
+						<i class="fas fa-copyright w3-text-red"></i> teamAwesome</a>
+					<p class="w3-bar-item w3-small w3-text-gray"><i class="fas fa-code w3-text-gray"></i> 18201a18d</p>
+					
+				</div>
+
+				<!-- shopping cart right menu -->
+				<div class="w3-sidebar w3-bar-block w3-card w3-animate-right w3-round-large w3-margin" style="display:none;right:0;width:60%;"
+				 id="rightMenu">
+
+					<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large"><i class="far fa-times-circle w3-xlarge w3-text-red w3-right w3-round-large w3-padding-large w3-light-gray"></i> <h3 class="w3-xxlarge w3-text-red w3-padding-large">Ingredient List</h3></button>
+					
+					<ul class="w3-ul">
+						<li class="w3-bar w3-card-2 w3-margin">
+							<span onclick="this.parentElement.style.display='none'" class="w3-button w3-white w3-xlarge w3-right w3-round-large w3-margin">
+								<i class="far fa-times-circle"></i>
+							</span>
+							<div>
+								<img src="assets/images/shopping/mixer.svg" alt="icon" class="w3-bar-item w3-circle w3-hide-small w3-left" style="width:85px">
+							</div>
+							<div class="w3-bar-item">
+								<span class="w3-large"><h3>#ListMyGrocery</h3></span>
+								<br>
+								<span id="timeSendSMS"></span>
+							</div>
+						</li>
+					</ul>
+					
+					<button class="w3-bar-item w3-button w3-large w3-tooltip"><i class="fa fa-mobile w3-xlarge w3-text-red w3-round-large w3-padding-large w3-light-gray"></i> SMS My List <span class="w3-text w3-tag w3-premiumFont">Premium Members Only</span></button>
+				</div>			 
+				 
+				<!--navigation on screen-->
+				<div>
+					<!--left menu button-->
+					<button style="width: 60px;" class="w3-btn w3-border w3-border-white w3-round-large w3-margin w3-xlarge w3-left w3-opacity-min w3-hover-opacity-off w3-red"
+					 onclick="openLeftMenu()">
+						<i class="fa fa-bars w3-text-white" title="Menu"></i>
+					</button>
+					<!--Make Your List button-->
+					<button style="width: 60px;" class="w3-btn w3-border w3-border-white w3-round-large w3-margin-top w3-xlarge w3-opacity-min w3-hover-opacity-off w3-red">
+						<a href="#">
+							<i class="far fa-check-circle w3-text-white" title="Make Your List"></i>
+						</a>
+					</button>
+					<!--Shopping Cart button-->
+					<button style="width: 60px;" class="w3-btn w3-border w3-border-white w3-round-large w3-margin w3-xlarge w3-right w3-opacity-min w3-hover-opacity-off w3-red"
+					 onclick="openRightMenu()">
+						<i class="fa fa-shopping-cart w3-text-white"></i>
+					</button>
+					
+					<!--User log in button-->
+					<button style="width: 60px;" class="w3-btn w3-border w3-border-white w3-round-large w3-margin-top w3-right w3-xlarge w3-opacity-min w3-hover-opacity-off w3-red" onclick="document.getElementById('id01').style.display='block'">
+						<a href="#">
+							<i class="fas fa-user w3-text-white" title="User Log In"></i>
+						</a>
+					</button>
+										
+                    <!-- Login form working on it for Premium Version -->
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-16 w3-display-topright w3-large">×</span>
+                            <div class="w3-center"><br>
+                                <i class="fas fa-user-lock w3-text-red w3-circle w3-margin-top w3-xxxlarge" title="Avatar" style="width:40%"></i>
+                            </div>
+                            <div class="w3-container">
+                                <div class="w3-section">
+                                <label><b>Premium User</b></label>
+                                <input class="w3-input w3-border w3-hover-border-black w3-margin-bottom" type="text" placeholder="Enter Your Phone Number">
+                                <label><b>Passcode</b></label>
+                                <input class="w3-input w3-border w3-hover-border-black" type="text" placeholder="10 Digit Security Code">
+                                <button class="w3-btn w3-btn-block w3-green w3-section">Login</button>
+                                <input class="w3-check" type="checkbox" checked="checked"> Remember me
+                                </div>
+                            </div>
+                            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                                <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+                                <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </div>
+                    </div>
+					
+				</div>
+
+			</nav>
+
+		</header>
+
+    </div>
+    
+    <!-- First Parallax Image with Logo Text -->
+
+	<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <h1>
+                <span class="w3-center w3-red w3-xxlarge w3-wide w3-text-light-gray" style="opacity:1;" id="myNavbar">MY GROCERY SHOP</span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- About Section	-->
+
+	<div class="w3-row confectionary">
+        <div class="w3-col w3-padding-16 w3-cell w3-cell-middle w3-center w3-large w3-topbar w3-border-pale-red" id="aboutApp">
+            <p class="w3-padding-large w3-xlarge w3-bottombar w3-border-light-gray">Not sure what to eat?
+            <b style="white-space:nowrap;"><span class="w3-text-red">&#160;MY GROCERY SHOP</span> can help!</b>
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row w3-bottombar w3-border-pale-red confectionary w3-padding-large">
+        
+        <div class="w3-col m4 w3-center w3-padding-large">
+            <div class="w3-margin">
+                <img src="assets/images/process/search.svg" alt="" style="max-width:100px;" class="w3-padding-large">
+                <p class="w3-text-dark-gray"><span class="w3-text-red">Search for a recipes</span> by craving, restrictions, or what you already have in your fridge.</p>  
+            </div>
+        </div>
+        <div class="w3-col m4 w3-center w3-padding-large">
+            <div class="w3-margin">
+                <img src="assets/images/process/list.svg" alt="" style="max-width:100px;" class="w3-padding-large">
+                <p class="w3-text-dark-gray">Review and <span class="w3-text-red">add missing ingredients</span> to your shopping list.</p>
+            </div>
+        </div>
+        <div class="w3-col m4 w3-center w3-padding-large">
+            <div class="w3-margin">
+                <img src="assets/images/process/food.svg" alt="" style="max-width:100px;" class="w3-padding-large">
+                <p class="w3-text-dark-gray"><span class="w3-text-red">Search the nutritional value</span> of your ingredients to make sure they are good for your body.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Second Parallax Image with Text -->
+
+	<div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <h1>
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-text-light-gray">LET'S GET COOKING</span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Container (Main Search Recipes Section) -->
+							
+	<div class="w3-row" id="mainList1">
+        <div class="w3-col m6 w3-center w3-padding-32 a2a" style="height: 580px;">
+            <div class="w3-container w3-center">
+                <div class="w3-padding-large"><h3>Try something new!</h3></div>
+                <img src="assets/images/party.svg" alt="Cooking New" style="max-height: 200px;">
+                <div class="w3-padding-large"><h5>Find a recipe that is the perfect fit.</h5></div>
+                <div class="w3-section">
+                    <form>
+                        <div class="form-group row">
+                            <!--New Recipe Search Button-->
+                            <div id="panel" class="w3-center">
+                                <button class="newRecipeButton w3-border w3-border-red w3-button w3-white w3-hover-red w3-round" value="Search!" id="complexSearch">Search New Recipe!</button>
+                                <br>
+                                <!--New Recipe Search Form Modal Pop Up-->
+                                <div class="searchModal w3-modal" id="mySearchModal">
+                                    <div class="w3-modal-content w3-animate-top w3-card-4">
+                                        <div class="w3-container w3-round" style="padding:0;">
+                                            <!-- close -->
+                                            <span class="searchClose w3-button w3-right w3-text-black">
+                                                <i class="far fa-times-circle"></i>
+                                            </span>
+                                            <!-- header -->
+                                            <div class="a2a modal-header">
+                                                <h1 class="w3-text-black">Find Your Ideal Meal</h1>
+                                            </div>
+                                            <!-- body -->
+                                            <div class="w3-container modal-body w3-margin">
+                                                <form id="complex-search-form">
+                                                    <div class="w3-padding w3-margin">
+                                                        <label class="w3-text-red" for="query-input">
+                                                        <h4>What sounds good?</h4>  
+                                                        </label>
+                                                        <input class="w3-input w3-border w3-light-grey w3-center w3-round" type="text" id="food-input" placeholder="A burger? A salad?">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="w3-padding w3-margin">
+                                                        <label class="w3-text-dark-gray" for="exclude-input">
+                                                        <h4>Hate olives? Exclude them here.</h4>    
+                                                        </label>
+                                                        <input class="w3-input w3-border w3-light-grey w3-center w3-round" type="text" id="exclude-input" placeholder="Exclude these ingredients.">
+                                                    </div>
+                                                    <label class="w3-text-dark-gray" for="intol-input">
+                                                        <h4>Intolerances:</h4>    
+                                                    </label>
+
+                                                    <div class="intolerances">
+
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="" type="checkbox" checked="checked" id="checkbox">
+                                                            <label class="w3-text-red">None</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="egg" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Egg</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="gluten" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Gluten</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="peanut" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Peanut</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="sesame" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Sesame</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="seafood" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Seafood</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="shellfish" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Shellfish</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="soy" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Soy</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="sugar" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Sugar</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="sulfite" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Sulfite</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="tree nut" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Tree Nut</label>
+                                                        </span>
+                                                        <span style="white-space: nowrap;" class="w3-margin-left w3-margin-right">
+                                                            <input class="w3-check" value="wheat" type="checkbox" id="checkbox">
+                                                            <label class="w3-text-dark-gray">Wheat</label>
+                                                        </span>
+                                                        <hr/>
+                                                    </div>
+
+                                                    <div class="w3-row-padding">
+                                                        <div class="w3-half">
+                                                            <label class="w3-text-dark-gray" for="diet-input">
+                                                                <h4>Diet:</h4>
+                                                            </label>
+                                                            <select class="w3-select w3-border" name="diet" id="dietType">
+                                                                <option value="">None</option>
+                                                                <option value="pescetarian">Pescetarian</option>
+                                                                <option value="lacto vegetarian">Lacto Vegetarian</option>
+                                                                <option value="ovo vegetarian">Ovo Vegetarian</option>
+                                                                <option value="vegan">Vegan</option>
+                                                                <option value="vegetarian">Vegetarian</option>
+                                                                <option value="whole 30">Whole 30</option>
+                                                                <option value="gluten free">Gluten Free</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="w3-half">
+                                                            <label class="w3-text-dark-gray" for="type-input">
+                                                                <h4>Meal Type:</h4>
+                                                            </label>
+                                                            <select class="w3-select w3-border w3-pale-red" name="meal" id="mealType">
+                                                                <option value="main course">Main Course</option>
+                                                                <option value="side dish">Side Dish</option>
+                                                                <option value="dessert">Dessert</option>
+                                                                <option value="appetizer">Appetizers</option>
+                                                                <option value="salad">Salad</option>
+                                                                <option value="soup">Soup</option>
+                                                                <option value="bread">Bread</option>
+                                                                <option value="breakfast">Breakfast</option>
+                                                                <option value="beverage">Beverage</option>
+                                                                <option value="sauce">Sauce</option>
+                                                                <option value="Drink">Drink</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr/>
+                                                    <button class="w3-border w3-border-red w3-button w3-white w3-hover-red w3-round" id="recipe-search" type="submit" name="action">
+                                                            <i class="fa fa-search"></i> Search recipes
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <!-- footer -->
+                                            <div class="w3-text-black a2a modal-footer w3-padding">To find the best result, please fill all inputs.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End New Recipe Search Form Pop Up-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col m6 w3-center w3-padding-32 a3a" style="height: 580px;">
+            <div class="w3-container w3-center">
+                <div class="w3-padding-large"><h3>What's in your fridge?</h3></div>
+                <img src="assets/images/cold.svg" alt="Cooking from fridge"  style="max-height: 200px;">
+                <div class="w3-padding-large"><h5>Save time, save money.</h5></div>
+                <div class="w3-section">					
+                    <!--By Ingredient Search Button-->
+                    <div id="panel10">
+                        <button class="w3-border w3-border-blue w3-button w3-white w3-hover-blue w3-round" value="What's in your fridge?" id="openIngredientSearch">What's In Your Fridge?</button>
+                        <br>
+                        <!--By Ingredient Search Form Pop Up-->
+                        <div class="ingredentModal w3-modal" id="byIngredientModal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <div class="w3-container w3-round" style="padding:0;">
+                                    <!-- close -->
+                                    <span class="byIngredientClose w3-button w3-right">
+                                        <i class="far fa-times-circle"></i>
+                                    </span>
+                                    <!-- header -->
+                                    <div class="a3a modal-header">
+                                        <h1 class="w3-text-black">What's In Your Fridge?</h1>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="w3-container modal-body w3-margin">
+                                        <form action="">
+                                            <label for="query-input">
+                                                <div class="w3-padding w3-margin">
+                                                    <h4>Find recipes that use ingredients you already have.</h4>
+                                                    <hr>
+                                                    <input class="w3-input w3-border w3-light-grey w3-center" type="text" id="ingredient-input" placeholder="Tomato, Onion, Cilantro">
+                                                    <hr>
+                                                    <button class="w3-border w3-border-blue w3-button w3-white w3-hover-blue w3-round" id="byIngredientSearch" type="submit" name="action">
+                                                            <i class="fa fa-search"></i> Search recipes
+                                                    </button>
+                                                </div>
+                                            </label>
+                                        </form>
+                                    </div>
+                                    <!-- footer -->
+                                    <div class="a3a modal-footer w3-text-black w3-padding">For best results, separate ingredients by comma and no spaces.</div>
+                                </div>  
+                            </div>
+                        </div>
+                        <!-- done -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Text -->
+
+	<div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <h1>
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-text-light-gray">FIND SOME HEALTHY</span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- Nutrition Section -->
+
+    <div class="w3-row" id="mainList2">
+        <div class="w3-col m6 w3-center w3-padding-32 a4a" style="height: 580px;">
+            <div class="w3-container w3-center">
+                <div class="w3-padding-large"><h3>What's In Your Food?</h3></div>
+                <img src="assets/images/apple.png" alt="Nutrition" style="max-height: 120px;">
+                <div class="w3-padding-large">
+                    <h5>Search nutrition information by ingredient and amount.</h5>
+                    <div class="w3-row w3-margin">
+                        <input class="nutrition-input w3-input w3-center" placeholder="Quantity Size Ingredient, e.g. 1 large apple or 1 bowl of rice" required>
+                    </div>
+                </div>
+                <button class="w3-border w3-border-red w3-button w3-white w3-hover-red w3-round" id="nutrition-search">Search</button>
+                <br/>
+                <div class="w3-section">	
+                    <div class="form-group row">
+                        <!--Nutrition Search Button-->
+                        <div id="panel20">
+                            <!--Nutrition Results Modal Pop Up-->
+                            <div class="nutritionModal w3-modal" id="myNutritionModal">
+                                <div class="w3-modal-content w3-animate-top w3-card-4">
+                                    <div class="w3-container w3-round" style="padding:0;">
+                                        <!-- close -->
+                                        <span class="nutritionClose w3-button w3-right">
+                                                <i class="far fa-times-circle"></i>
+                                        </span>
+                                        <!-- header -->
+                                        <div class="a4a modal-header" id="nutrition-header">
+                                            
+                                        </div>
+                                        <!-- body -->
+                                        <div class="w3-container nutrition-body modal-body"></div>
+                                        <!-- footer -->
+                                        <div class="w3-container a4a modal-footer w3-padding-large" id="nutrition-footer">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col m6 w3-center w3-padding-32 a5a" id="addARecipebutton" style="height: 580px;">
+            <div class="w3-container w3-center">
+                <div class="w3-padding-large"><h3>Add Your Own Recipe!</h3></div>
+                <img src="assets/images/food.png" alt="Add Recipe" style="max-height: 175px;">
+                <div class="w3-padding-large"><h5>Add your personal cookbook recipe.</h5></div>
+                <div class="w3-section">
+                    <div class="form-group row">
+                        <!--New Recipe Search Button-->
+                        <div id="panel30">
+                            <button class="w3-border w3-border-green w3-button w3-white w3-hover-green w3-round" value="Search!" id="addRecipeButton">Add A Recipe!</button>
+                            <br>
+                            <div class="yourRecipeModal w3-modal" id="yourRecipeModal">
+                                <div class="w3-modal-content w3-animate-top w3-card-4">
+                                    <div class="w3-container" style="padding:0;">
+                                        <span class="addClose w3-button w3-right">
+                                            <i class="far fa-times-circle"></i>
+                                        </span>
+                                        <div class="a5a modal-header">
+                                            <h3 class="w3-text-black">Add a recipe from <span style="white-space:nowrap">your personal cookbook.</span> </h3>
+                                        </div>
+                                        <div class="modal-body w3-margin">
+                                            <div class="w3-container w3-center">
+                                                <img src="assets/images/party.svg" alt="Cooking New" style="width:15%; padding:20px 0;">
+                                                <h5 id="addSuccess">Save your recipes and ingredients <span style="white-space: nowrap;">to your master list.</span></h5>
+                                                <form class="w3-container"> 
+                                                    <div class="form-group row">
+                                                        <div class="w3-padding">
+                                                            <label for="recipe-name-input"><h4>Name:</h4> </label>
+                                                            <input class="w3-input w3-border" id="recipe-name-input" type="text">
+                                                        </div>
+                                                        <div class="w3-padding">
+                                                            <label for="recipe-ingredient-input"><h4>Ingredients:</h4> </label><br>
+                                                            <textarea id="userAddedIngredients" placeholder="i.e. 2 large chicken breast, 1 can black beans, 2 tablespoon chili powder" name="message"></textarea>	
+                                                        </div>
+                                                        <div class="w3-third w3-padding-small">
+                                                            <label for="recipe-min-input"><h4>Prep Time:</h4> </label>
+                                                            <input class="w3-input w3-border" id="recipe-min-input" type="text">
+                                                        </div>
+                                                        <div class="w3-third w3-padding-small">
+                                                            <label for="recipe-diet-input"><h4>Diet:</h4> </label>
+                                                            <input class="w3-input w3-border" id="recipe-diet-input" type="text">
+                                                        </div>
+                                                        <div class="w3-third w3-padding-small">
+                                                            <label for="recipe-type-input"><h4>Meal Type:</h4> </label>
+                                                            <input class="w3-input w3-border" id="recipe-type-input" type="text">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <hr>
+                                                <div class="w3-padding">
+                                                    <button class="w3-border w3-border-green w3-button w3-white w3-hover-green w3-round w3-padding-large" id="add-recipe-btn" type="submit">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---Added Recipes Modal -->
+
+    <div id="panel40">
+        <div class="w3-modal" id="addedRecipesModal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <div class="w3-container w3-blue w3-display-container modal-header" id="addedRecipes-header">
+                    <h1>My Recipes</h1>
+                </div>
+                <div class="w3-container addedRecipes-body modal-body">
+
+
+                    <!-- My Recipes -->
+                    <div class="w3-content w3-container" id="recipe-tracker">
+                        <div class="w3-cell-row w3-panel" id="recipeList1">
+                            <div class="w3-cell w3-margin" style="width:100%;">
+                                <div class="w3-container w3-center">
+                                <table class="table w3-table w3-bordered w3-striped" id="recipe-table">
+                                    <thead>
+                                        <tr>
+                                        <th>Name</th>
+                                        <th>Prep Time</th>
+                                        <th>Diet</th>
+                                        <th>Meal Type</th>
+                                        <th>Select</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    </table>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="w3-container w3-blue modal-footer" id="addedRecipes-footer">
+                    <span class="addedRecipesClose w3-text-black">
+                        <i class="far fa-times-circle"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---Added Ingredients Modal -->
+
+    <div id="panel50">
+        <div class="w3-modal" id="addedIngredientsModal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <div class="w3-container w3-blue w3-display-container modal-header" id="addedIngredients-header">
+                    <h1>Ingredients</h1>
+                </div>
+                <div class="w3-container addedIngredients-body modal-body">
+                </div>
+                <div class="w3-container w3-blue modal-footer" id="addedIngredients-footer">
+                    <!-- <button class="w3-btn" id="user-add-all">Add all ingredients to master list.</button> -->
+                    <span class="addedIngredientsClose w3-text-black">
+                        <i class="far fa-times-circle"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forth Parallax Image with Text -->
+
+	<div class="bgimg-4 w3-display-container w3-opacity-min" id="checkout">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <h1>
+                <span class="w3-button w3-hover-red w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-text-light-gray"><i class="fa fa-shopping-cart"></i> VIEW MY LIST</span>
+            </h1>
+        </div>
+    </div>
+
+
+    <!--:::::::::::::::::::::::::::::::::::::::
+  Footer
+::::::::::::::::::::::::::::::::::::::::-->
+
+<footer id="footer" class="w3-center w3-padding-64">
+    <div id="footerLinks" class="w3-padding-64">
+        <a href="#" target="_blank"><i class="fa fa-github w3-button" style="font-size:25px;color: #bd2c00;"></i></a> |
+        <a href="https://linkedin.com/in/desaignstudio" target="_blank"><i class="fa fa-linkedin-square w3-button" style="font-size:25px;color: #0077b5;"></i></a> |
+        <a href="#home" class="w3-button w3-hover-green w3-border w3-border-green w3-round "><i class="fa fa-arrow-up w3-margin-right"></i>MyGroceryShop</a>
+    </div>
+    <div id="logoCopyright" class="w3-row w3-display-container w3-left w3-margin-left">
+        <img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="desaign llc" height="60" border="none" style="padding-bottom: 5px;" />
+        <span class="w3-display-bottom" style="white-space: nowrap; font-size: 12px; line-height: 20px; letter-spacing: 1px; color: #34495e; vertical-align: bottom;">&#160;&copy; 2011-<script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> <a href="http://desaign.studio" style="color:#e74c3c; text-decoration: underline; vertical-align: bottom;" target="_blank" >DESAIGN.STUDIO</a> All Rights Reseverd.</span>
+        <!--plog number-->
+        <div id="plog" class="w3-bottom w3-khaki" style="z-index: 99999"><span class="w3-display-bottomright w3-padding-small w3-margin-right w3-opacity" style="font-size: 10px;">XXXXX</span></div>
+    </div>
+</footer>
+     
+    <!--:::::::::::::::::::::::::::::::::::::::
+  External JavaScripts
+::::::::::::::::::::::::::::::::::::::::-->
+
+    <!-- Developer JavaScript -->
+	<script src="assets/js/main.js" type="text/javascript"></script>
+	<script>
+		var d = new Date();
+		document.getElementById("timeSendSMS").innerHTML = d;
+	</script>
+    
+    <!-- For ECMAScript 6 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.js'></script>
+    <script type="text/babel">
+    
+    </script>
+
+</body>
+
+<!--==========================================================-->
+<!--==========================================================-->
+<!--=============================================================
+
+        ╥ DESIGNED AND DEVELOPED BY...
+        ║ 
+        ║   /       ───
+        ║ ╓──╖ ╓───────╖ ╓╖ ╓───╖ ╓───╖ TM
+        ║ ║  ║ ║       ║ ╙╜ ║   ║ ║   ║  
+    ╓───╫─╫──╜ ╙──╖ ╓──╫──╖ ║   ║ ║   ║
+    ║   ║ ║       ║ ║  ║  ║ ║   ║ ║   ║
+    ║   ║ ╙───────╜ ╙──╜  ║ ╙───╫─╜   ║ 
+    ║   ║ SINCE 20ELEVEN  ║     ║     ╙ LLC © HTTPS://DESAIGN.APP 
+    ╙───╜                 ╙─────╜             ALL RIGHTS RESERVED
+  
+==============================================================-->
+<!--==========================================================-->
+<!--==========================================================-->
+
+</html>
