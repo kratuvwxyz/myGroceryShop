@@ -632,7 +632,7 @@ $(document).on('click','.learnMore',function(){
   $.ajax({
     url: "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/"+id+"/information",
     beforeSend: function(xhr) { 
-      xhr.setRequestHeader("X-Mashape-Key", "LrkalLNxQhmshrafGm4A9Ku2Q0Erp1NXSbIjsnfduvX2Pmrre8");
+      xhr.setRequestHeader("X-Mashape-Key", "B6aQubD0MzmshaDtr6oXZPh36w3Qp17hKoqjsnoDFeTMOaQT32");
     },
     type: 'GET',
     dataType: 'json',
