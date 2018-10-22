@@ -558,6 +558,31 @@
         </div>
     </div>
 
+    <!-- Recipe results shown here. -->
+
+	<div class="w3-row" id="blockRecipe">
+		<div class="w3-cell w3-light-grey" id="recipe-view"></div>
+	</div>
+
+	<!-- Recipe information shown here. -->
+
+	<div class="modal w3-modal" id="myModal">
+		<div class="w3-modal-content w3-animate-top w3-card-4">
+			<div class="w3-container w3-green w3-display-container recipeInfo-modal-header modal-header"></div>
+			<div class="w3-container recipeInfo-modal-body modal-body"></div>
+			<!-- Ingredient "buttons" are dumped here from ingredientArray -->
+			<div class="w3-container modal-ingredients w3-blue">
+				<h4>Ingredients</h4>
+				<p>Select ingredients to add to your master list individually, or add them all below.</p>
+				<div id="ingredient-view"></div>
+			</div>
+			<div class="w3-container w3-green recipeInfo-modal-footer modal-footer">
+				<button class="w3-btn" id="add-all">Add all ingredients to master list.</button>
+				<span class="close">&times;</span>
+			</div>
+		</div>
+	</div>
+
     <!-- Third Parallax Image with Text -->
 
 	<div class="bgimg-3 w3-display-container w3-opacity-min">
