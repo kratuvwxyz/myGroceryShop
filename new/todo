@@ -1,5 +1,61 @@
 Need for this project:
-    ☐ Firebase.js
+    version control:
+        ☐ github
+    store data:
+        ☐ Firebase
+    authentication:
+        ☐ Firestore
+    API:
+        search recipes:
+        ☐ edamam — https://developer.edamam.com/edamam-docs-recipe-api
+        search nutrition:
+
+        sms:
+
+    Deliver Product:?:
+        ☐ HEB
+        ☐ wholefoods
 
 Content:
-    ☐ about
+    header:
+        ☐ header menu
+            ☐ hamburger menu toggle
+            ☐ Title
+            ☐ account info
+                before log in:
+                ☐ sign up
+                ☐ log in
+                after log in:
+                ☐ log out
+                ☐ Account info
+                ☐ shopping list
+            ☐ contact
+
+    sidebar menu:
+        ☐ title
+        ☐ close menu
+        ☐ home
+        ☐ about
+        ☐ leftover groceries
+        recipes:
+            ☐ search from leftover
+            ☐ search new recipes
+            disable if it's not logged in:
+                ☐ add recipe
+                ☐ my recipes
+        ☐ nutrition
+        disable if it's not logged in:
+            ☐ my shopping list
+            ☐ sms my list
+            account:
+                ☐ manage account
+                ☐ log out
+                ☐ feedback or questions
+        contact:
+            ☐ support
+            ☐ rate us
+                
+        version number:
+
+
+
