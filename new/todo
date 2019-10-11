@@ -1,3 +1,5 @@
+☐ @today @critical @high @low 
+
 Need for this project:
     version control:
         ☐ github
@@ -19,7 +21,7 @@ Need for this project:
 Content:
     header:
         ☐ header menu
-            ☐ hamburger menu toggle
+            ☐ hamburger sidebar menu toggle
             ☐ Title
             ☐ account info
                 before log in:
@@ -57,5 +59,41 @@ Content:
                 
         version number:
 
+    Main page:
+        parallax:
+            ☐ image
+            ☐ scroll down button
+    
+    About:
+        content:
+    
+    Devider:
+        parallax:
+            ☐ image
+            ☐ title
+    
+    Recipe Section:
+        Leftover Groceries:
+            
+        Recipes from Leftover:
 
+        New Recipes:
+            ☐ form setup @critical 
+            ☐ connect API @high 
+            ☐ display recipes @high 
+        Your Recipes:
+    
+    Devider:
+        parallax:
+            ☐ image
+            ☐ title
 
+    Shopping list:
+        Added Items to your shopping list:
+
+        Nutrition Check:
+
+        Find Grocery Store Near Me:
+
+        Deliver your Items:?:
+        
