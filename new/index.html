@@ -242,12 +242,15 @@
     <!-- new-recipe-04  -->
     <div class="modal fade new-recipe-04" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
+            <!-- title  -->
             <h5 class="display-4">Find New Recipes</h5>
+            <!-- content -->
             <div class="modal-content p-4">
                 <div>
                     <br><span class="h5">To find the best result, please fill all inputs.</span>
                 </div>
                 <div class="line"></div>
+                <!-- form starts -->
                 <div class="form-group">
                     <!-- MealType -->
                     <label for="Meal" class="h6title">Meal Type</label>
@@ -255,7 +258,7 @@
                         <div class="input-group col-md-3">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <input type="radio" aria-label="Radio button for following text input">
+                                    <input type="radio" aria-label="Radio button for following text input" value="breakfast">
                                 </div>
                             </div>
                             <div class="form-control h5">Breakfast</div>
@@ -263,7 +266,7 @@
                         <div class="input-group col-md-3">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <input type="radio" aria-label="Radio button for following text input">
+                                    <input type="radio" aria-label="Radio button for following text input" value="lunch">
                                 </div>
                             </div>
                             <div class="form-control h5">Lunch</div>
@@ -271,7 +274,7 @@
                         <div class="input-group col-md-3">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <input type="radio" aria-label="Radio button for following text input">
+                                    <input type="radio" aria-label="Radio button for following text input" value="dinner">
                                 </div>
                             </div>
                             <div class="form-control h5">Dinner</div>
@@ -279,7 +282,7 @@
                         <div class="input-group col-md-3">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <input type="radio" aria-label="Radio button for following text input">
+                                    <input type="radio" aria-label="Radio button for following text input" value="snack">
                                 </div>
                             </div>
                             <div class="form-control h5">Snack</div>
@@ -290,79 +293,79 @@
                     <label for="Dish" class="h6title">Dish Type</label>
                     <select class="custom-select" name="Diet" id="Diet">
                         <option selected>Select one of the option</option>
-                        <option value="">Bread</option>
-                        <option value="">Cereals</option>
-                        <option value="">Condiments and sauces</option>
-                        <option value="">Drinks</option>
-                        <option value="">Desserts</option>
-                        <option value="">Main course</option>
-                        <option value="">Pancake</option>
-                        <option value="">Preps</option>
-                        <option value="">Preserve</option>
-                        <option value="">Salad</option>
-                        <option value="">Sandwiches</option>
-                        <option value="">Side dish</option>
-                        <option value="">Soup</option>
-                        <option value="">Starter</option>
-                        <option value="">Sweets</option>
+                        <option value="brad">Bread</option>
+                        <option value="cereals">Cereals</option>
+                        <option value="condiments and sauces">Condiments and sauces</option>
+                        <option value="drinks">Drinks</option>
+                        <option value="desserts">Desserts</option>
+                        <option value="main course">Main course</option>
+                        <option value="pancake">Pancake</option>
+                        <option value="preps">Preps</option>
+                        <option value="preserve">Preserve</option>
+                        <option value="salad">Salad</option>
+                        <option value="sandwiches">Sandwiches</option>
+                        <option value="side dish">Side dish</option>
+                        <option value="soup">Soup</option>
+                        <option value="starter">Starter</option>
+                        <option value="sweets">Sweets</option>
                     </select>
                     <div class="line"></div>
                     <!-- CuisionType -->
                     <label for="Dish" class="h6title">Cuision Type</label>
                     <select class="custom-select" name="Diet" id="Diet">
                         <option selected>Select one of the option</option>
-                        <option value="">
+                        <option value="american">
                             American
                         </option>
-                        <option value="">
+                        <option value="asian">
                             Asian
                         </option>
-                        <option value="">
+                        <option value="british">
                             British
                         </option>
-                        <option value="">
+                        <option value="caribbean">
                             Caribbean
                         </option>
-                        <option value="">
+                        <option value="central europe">
                             Central Europe
                         </option>
-                        <option value="">
+                        <option value="chinese">
                             Chinese
                         </option>
-                        <option value="">
+                        <option value="eastern europe">
                             Eastern Europe
                         </option>
-                        <option value="">
+                        <option value="french">
                             French
                         </option>
-                        <option value="">
+                        <option value="indian">
                             Indian
                         </option>
-                        <option value="">
+                        <option value="italian">
                             Italian
                         </option>
-                        <option value="">
+                        <option value="japanese">
                             Japanese
                         </option>
-                        <option value="">
+                        <option value="kosher">
                             Kosher
                         </option>
-                        <option value="">
+                        <option value="mediterranean">
                             Mediterranean
                         </option>
-                        <option value="">
+                        <option value="maxican">
                             Mexican
                         </option>
-                        <option value="">
+                        <option value="middle eastern">
                             Middle Eastern
                         </option>
-                        <option value="">
+                        <option value="nordic">
                             Nordic
                         </option>
-                        <option value="">
+                        <option value="south american">
                             South American
                         </option>
-                        <option value="">
+                        <option value="south east asian">
                             South East Asian
                         </option>
                     </select>
@@ -371,12 +374,12 @@
                     <label for="Diet" class="h6title">Healthy Diet Options</label>
                     <select class="custom-select" name="Diet" id="Diet">
                         <option selected>Select one of the option</option>
-                        <option value="">Balanced</option>
-                        <option value="">High-Fiber</option>
-                        <option value="">High-Protein</option>
-                        <option value="">Low-Carb</option>
-                        <option value="">Low-Fat</option>
-                        <option value="">Low-Sodium</option>
+                        <option value="balanced">Balanced</option>
+                        <option value="high-fiber">High-Fiber</option>
+                        <option value="high-protein">High-Protein</option>
+                        <option value="low-carb">Low-Carb</option>
+                        <option value="low-fat">Low-Fat</option>
+                        <option value="low-sodium">Low-Sodium</option>
                     </select>
                     <div class="line"></div>
                     <!-- Intolerances  -->
