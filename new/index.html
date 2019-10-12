@@ -254,153 +254,31 @@
                 <div class="form-group">
                     <!-- MealType -->
                     <label for="Meal" class="h6title">Meal Type</label>
-                    <div class="row">
-                        <div class="input-group col-md-3">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <input type="radio" aria-label="Radio button for following text input" value="breakfast">
-                                </div>
-                            </div>
-                            <div class="form-control h5">Breakfast</div>
-                        </div>
-                        <div class="input-group col-md-3">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <input type="radio" aria-label="Radio button for following text input" value="lunch">
-                                </div>
-                            </div>
-                            <div class="form-control h5">Lunch</div>
-                        </div>
-                        <div class="input-group col-md-3">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <input type="radio" aria-label="Radio button for following text input" value="dinner">
-                                </div>
-                            </div>
-                            <div class="form-control h5">Dinner</div>
-                        </div>
-                        <div class="input-group col-md-3">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <input type="radio" aria-label="Radio button for following text input" value="snack">
-                                </div>
-                            </div>
-                            <div class="form-control h5">Snack</div>
-                        </div>
-                    </div>
+                    <div class="mealType row"></div>
                     <div class="line"></div>
                     <!-- DishType -->
                     <label for="Dish" class="h6title">Dish Type</label>
-                    <select class="custom-select" name="Diet" id="Diet">
-                        <option selected>Select one of the option</option>
-                        <option value="brad">Bread</option>
-                        <option value="cereals">Cereals</option>
-                        <option value="condiments and sauces">Condiments and sauces</option>
-                        <option value="drinks">Drinks</option>
-                        <option value="desserts">Desserts</option>
-                        <option value="main course">Main course</option>
-                        <option value="pancake">Pancake</option>
-                        <option value="preps">Preps</option>
-                        <option value="preserve">Preserve</option>
-                        <option value="salad">Salad</option>
-                        <option value="sandwiches">Sandwiches</option>
-                        <option value="side dish">Side dish</option>
-                        <option value="soup">Soup</option>
-                        <option value="starter">Starter</option>
-                        <option value="sweets">Sweets</option>
-                    </select>
+                    <div class="dishType"></div>
                     <div class="line"></div>
                     <!-- CuisionType -->
-                    <label for="Dish" class="h6title">Cuision Type</label>
-                    <select class="custom-select" name="Diet" id="Diet">
-                        <option selected>Select one of the option</option>
-                        <option value="american">
-                            American
-                        </option>
-                        <option value="asian">
-                            Asian
-                        </option>
-                        <option value="british">
-                            British
-                        </option>
-                        <option value="caribbean">
-                            Caribbean
-                        </option>
-                        <option value="central europe">
-                            Central Europe
-                        </option>
-                        <option value="chinese">
-                            Chinese
-                        </option>
-                        <option value="eastern europe">
-                            Eastern Europe
-                        </option>
-                        <option value="french">
-                            French
-                        </option>
-                        <option value="indian">
-                            Indian
-                        </option>
-                        <option value="italian">
-                            Italian
-                        </option>
-                        <option value="japanese">
-                            Japanese
-                        </option>
-                        <option value="kosher">
-                            Kosher
-                        </option>
-                        <option value="mediterranean">
-                            Mediterranean
-                        </option>
-                        <option value="maxican">
-                            Mexican
-                        </option>
-                        <option value="middle eastern">
-                            Middle Eastern
-                        </option>
-                        <option value="nordic">
-                            Nordic
-                        </option>
-                        <option value="south american">
-                            South American
-                        </option>
-                        <option value="south east asian">
-                            South East Asian
-                        </option>
-                    </select>
+                    <label for="Cuision" class="h6title">Cuision Type</label>
+                    <div class="cuisionType"></div>
                     <div class="line"></div>
                     <!-- Healthy Diet Options  -->
                     <label for="Diet" class="h6title">Healthy Diet Options</label>
-                    <select class="custom-select" name="Diet" id="Diet">
-                        <option selected>Select one of the option</option>
-                        <option value="balanced">Balanced</option>
-                        <option value="high-fiber">High-Fiber</option>
-                        <option value="high-protein">High-Protein</option>
-                        <option value="low-carb">Low-Carb</option>
-                        <option value="low-fat">Low-Fat</option>
-                        <option value="low-sodium">Low-Sodium</option>
-                    </select>
+                    <div class="dietType"></div>
                     <div class="line"></div>
                     <!-- Intolerances  -->
                     <label for="Health" class="h6title">Special Kind of Food Request</label>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 specialRequest"></div>
-                        <div class="col-md-6 col-lg-4 specialRequesttwo"></div>
-                        <div class="col-md-6 col-lg-4 specialRequestthree"></div>
-                    </div>
+                    <div class="specialRequest row"></div>
                     <div class="line"></div>
                     <!-- Anything you have in mind to choose -->
                     <label for="choice" class="h6title">Anything You Have In Your Mind To Cook</label>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">What sounds good?</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="For example Vegitable, Noodles, Chicken">
-                        <small id="emailHelp" class="form-text text-muted">Separate ingredients by comma.</small>
-                    </div>
+                    <input type="email" class="form-control" id="userIngredients" aria-describedby="areaHelp" placeholder="For example Vegitable, Noodles, Chicken">
+                    <small id="areaHelp" class="form-text text-muted">Separate ingredients by comma.</small>
                     <div class="line"></div>
-                    We love to find a test for your mood! <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                    <button type="submit" class="btn btn-dark">Search</button> 
+                    We love to find a test for your mood! &#160;&#160;
+                    <button type="submit" class="btn btn-dark btn-block mt-2" id="newRecipeSearchBtn">Search</button>
                 </div>
             </div>
         </div>
