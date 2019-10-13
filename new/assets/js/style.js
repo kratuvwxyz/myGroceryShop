@@ -45,3 +45,31 @@ recFolder('Leftover Groceries', '.add-to-list-01', 'Add To List', '.r1', 'DDCC00
 recFolder('Recipes from Leftover', '.lefover-recipe-03', 'Search', '.r1', 'CCCC00');
 recFolder('New Recipes', '.new-recipe-04', 'Search', '.r1', 'BBCC00');
 recFolder('Nutrition', '.nutrition-05', 'Search', '.r1', 'AACC00');
+
+
+$(document).on('click', '#newRecipeSearchBtn', (event)=>{
+    event.preventDefault();
+    // meal type radio button
+    let a = $('#inputRadioCheck1 input:checked').val();
+    // dish type selection
+    let b = $('#inputDishType option:selected').val();
+    // cuision type selection
+    let c = $('#inputCuisionType option:selected').val();
+    // healthy diet options selection
+    let d = $('#inputDietType option:selected').val();
+    // special kind of request
+    // adding selection in an array first
+    let e = [];
+    $('#checkInteruptType input:checked').each(function() {
+        e.push($(this).val());
+    });
+    // use this array to join in a string
+    let f = e.join(', ');
+    // user ingredient in a string
+    let g = $('#userIngredients').val().trim();
+
+
+    
+    
+    
+});
