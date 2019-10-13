@@ -25,8 +25,12 @@
         <!-- Sidebar Menu -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3 class="text-uppercase" style="line-height: 1em">&#160;My<br><strong
-                        style="font-size: 1.5em; line-height: 1.0625em;">Grocery.</strong><br>&#160;Shop</h3>
+                <a href="index.html">
+                    <h3 class="text-uppercase" style="line-height: 1em">
+                        &#160;My<br><strong
+                            style="font-size: 1.5em; line-height: 1.0625em;">Grocery.</strong><br>&#160;Shop
+                    </h3>
+                </a>
             </div>
 
             <button type="button" id="sidebarCollapse1" class="btn btn-outline-dark btn-block">
@@ -35,10 +39,11 @@
 
             <ul class="list-unstyled components">
                 <!-- Home  -->
-                <li class="active"><a href="#"><span class="boxMenuAF"><i class="fa fa-hashtag"
+                <li id="homeLi"><a href="#"><span class="boxMenuAF"><i class="fa fa-hashtag"
                                 aria-hidden="true"></i></span> HOME</i></a></li>
                 <!-- About  -->
-                <li><a href="#"><span class="boxMenuAF"><i class="fa fa-check" aria-hidden="true"></i></span> ABOUT</a>
+                <li id="aboutLi"><a href="#about"><span class="boxMenuAF"><i class="fa fa-check"
+                                aria-hidden="true"></i></span> ABOUT</a>
                 </li>
                 <!-- Leftover Grocery  -->
                 <li><a href="#"><span class="boxMenuAF"><i class="fa fa-leaf" aria-hidden="true"></i></span> Leftover
@@ -103,15 +108,17 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark ml-2">
                         <i class="fa fa-bars" aria-hidden="true" id="hamburgerBtn"></i>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                    <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
-                    </button>
-                    <h1 id="headOne" class="pl-2 pt-2" style="letter-spacing: 2px;">MY<strong>GROCERY</strong>SHOP</h1>
+                    </button> -->
+                    <h1 id="headOne" class="pl-3 pt-2 pr-2" style="letter-spacing: 2px;">
+                        <a href="index.html">MY<strong>GROCERY</strong>SHOP</a>
+                    </h1>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item pr-2">
@@ -129,9 +136,10 @@
 
         </div>
     </div>
+
     <!-- about  -->
-    <div class="container-fluid p-5">
-        <div class="row">
+    <div class="container-fluid py-5" id='about'>
+        <div class="row p-5">
             <div class="jumbotron-fluid">
                 <h1>About Grocery</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero dolorum eius ad. Dolores,
@@ -156,56 +164,17 @@
             </div>
         </div>
     </div>
+
     <!-- Let's Get Cooking with parallax -->
     <div class="container-fluid jarallax-02">
         <div class="display-4 centerMiddle">Let's Get Cooking</div>
     </div>
+
     <!-- 4 columns with add, view, search and find -->
     <div class="container-fluid">
-        <div class="row">
-            <!-- leftover groceries  -->
-            <div class="col-6 col-md-3">
-                <div class="row p-3">
-                    <div class="h3">
-                        Leftover <br>Groceries<br><br>
-                        <br>
-                        <div class="btn btn-dark" data-toggle="modal" data-target=".add-to-list-01">Add & View to List
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- recipes from leftover  -->
-            <div class="col-6 col-md-3">
-                <div class="row p-3">
-                    <div class="h3">
-                        Recipes from <br>Leftover<br><br>
-                        <br>
-                        <div class="btn btn-dark" data-toggle="modal" data-target=".lefover-recipe-03">Search</div>
-                    </div>
-                </div>
-            </div>
-            <!-- new receipes  -->
-            <div class="col-6 col-md-3">
-                <div class="row p-3">
-                    <div class="h3">
-                        New<br>Recipes<br><br>
-                        <br>
-                        <div class="btn btn-dark" data-toggle="modal" data-target=".new-recipe-04">Search</div>
-                    </div>
-                </div>
-            </div>
-            <!-- nutrition  -->
-            <div class="col-6 col-md-3">
-                <div class="row p-3">
-                    <div class="h3">
-                        Nutrition<br><br><br>
-                        <br>
-                        <div class="btn btn-dark" data-toggle="modal" data-target=".nutrition-05">Find</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="r1 row"></div>
     </div>
+
     <!-- view shopping list with parallax  -->
     <div class="container-fluid jarallax-03">
         <div class="display-4 centerMiddle">View Shopping List</div>
@@ -274,7 +243,8 @@
                     <div class="line"></div>
                     <!-- Anything you have in mind to choose -->
                     <label for="choice" class="h6title">Anything You Have In Your Mind To Cook</label>
-                    <input type="email" class="form-control" id="userIngredients" aria-describedby="areaHelp" placeholder="For example Vegitable, Noodles, Chicken">
+                    <input type="email" class="form-control" id="userIngredients" aria-describedby="areaHelp"
+                        placeholder="For example Vegitable, Noodles, Chicken">
                     <small id="areaHelp" class="form-text text-muted">Separate ingredients by comma.</small>
                     <div class="line"></div>
                     We love to find a test for your mood! &#160;&#160;
@@ -312,19 +282,8 @@
     <!-- developer Script -->
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#headOne').toggleClass('activeOne');
-            });
-            $('#sidebarCollapse1').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#headOne').toggleClass('activeOne');
-            });
+            $('.version').text('3V' + '190441051001').addClass('text-muted font-weight-lighter text-monospace');
         });
-    </script>
-
-    <script>
-        $('.version').text('3V'+'190441051001').addClass('text-muted font-weight-lighter text-monospace');
     </script>
 </body>
 
