@@ -1,18 +1,36 @@
+//Scroll menu display
+$(window).on('scroll', () => {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        $('.navbar').css('background', '#C2BE8E').css('z-index', 998);
+    } else {
+        $('.navbar').css('background', '#C2BE8EB3');
+    }
+});
+
+//Menu toggle
 toggleFunction = () => {
     $('#sidebar').toggleClass('active');
     $('#headOne').toggleClass('activeOne');
 }
 
+toggleBodyFunction = () => {
+    if($('.active') === false){
+        toggleFunction();
+    }
+}
+
+
 //Menu slide over
 $(document).on('click', '#sidebarCollapse', toggleFunction);
 $(document).on('click', '#sidebarCollapse1', toggleFunction);
+$(document).on('click', 'body', toggleBodyFunction);
 $(document).on('click', '#homeLi', toggleFunction);
 $(document).on('click', '#aboutLi', toggleFunction);
 
 //Receipe Sections
 //a = ; b = ; c = ; d = ; e = background color
 recFolder = (a, b, c, d, e) => {
-    let aa = $('<div></div>').addClass('col-6 col-md-3').css('background-color', '#'+e);
+    let aa = $('<div></div>').addClass('col-6 col-md-3').css('background-color', '#' + e);
     let bb = $('<div></div>').addClass('row');
     let cc = $('<div></div>').addClass('h3 p-3').text(a);
     let br = $('<br><br><br>');
