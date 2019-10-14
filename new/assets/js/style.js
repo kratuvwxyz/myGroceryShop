@@ -19,7 +19,6 @@ toggleBodyFunction = () => {
     }
 }
 
-
 //Menu slide over
 $(document).on('click', '#sidebarCollapse', toggleFunction);
 $(document).on('click', '#sidebarCollapse1', toggleFunction);
@@ -49,14 +48,21 @@ recFolder('Nutrition', '.nutrition-05', 'Search', '.r1', 'AACC00');
 
 $(document).on('click', '#newRecipeSearchBtn', (event)=>{
     event.preventDefault();
-    // meal type radio button
-    let a = $('#inputRadioCheck1 input:checked').val();
+
+    // gather values
+    // 1 includeIngredients
+    // user ingredient in a string
+    let a1 = $('#userIngredients').val().trim();
+    // 2 type
     // dish type selection
-    let b = $('#inputDishType option:selected').val();
+    let b2 = $('#inputDishType option:selected').val();
+    // 3 cuisine
     // cuision type selection
-    let c = $('#inputCuisionType option:selected').val();
+    let c3 = $('#inputCuisionType option:selected').val();
+    // 4 diet
     // healthy diet options selection
-    let d = $('#inputDietType option:selected').val();
+    let d4 = $('#inputDietType option:selected').val();
+    // 5 intolerances
     // special kind of request
     // adding selection in an array first
     let e = [];
@@ -64,12 +70,35 @@ $(document).on('click', '#newRecipeSearchBtn', (event)=>{
         e.push($(this).val());
     });
     // use this array to join in a string
-    let f = e.join(', ');
-    // user ingredient in a string
-    let g = $('#userIngredients').val().trim();
-
-
-    
-    
-    
+    let f5 = e.join(', ');
+    // 6 excludeIngredients
+    // user ingredient intaularance in a string
+    let g6 = $('#userExcludeIng').val().trim();
+    // 7 maxReadyTime
+    // Max time range
+    let h7 = $('#rangeDemo').val();
+    // 8 instructionsRequired = true
+    console.log(a1,b2,c3,d4,f5,g6,h7);
+    $('form').get(0).reset();
+    console.log(a1,b2,c3,d4,f5,g6,h7);
+    $.ajax({
+        url:"https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/complexSearch?includeIngredients="+a1+"&type="+b2+"&cuisine="+c3+"&diet="+d4+"&intolerances="+f5+"&excludeIngredients="+g6+"&maxReadyTime="+h7,
+        beforeSend: function(xhr) { 
+          xhr.setRequestHeader("X-Mashape-Key", "B6aQubD0MzmshaDtr6oXZPh36w3Qp17hKoqjsnoDFeTMOaQT31");
+        },
+        type: 'GET',
+        dataType: 'json',
+        contentType: 'application/json',
+        error: function(a){
+            console.log("Cannot get data");
+            console.log(a);
+            
+        },
+        success: function (data) {
+          console.log(data);
+        }        
+      }).then(function(response){
+        let recipeList = response.results;
+        console.log(recipeList);
+      })
 });

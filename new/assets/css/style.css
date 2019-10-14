@@ -261,3 +261,35 @@ a.article:hover {
     left: 5%;
     right: 5%;
 }
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #BDC18E;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+    
+.slider:hover {
+    opacity: 1;
+}
+    
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #312F1A;
+    cursor: pointer;
+}
+    
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #312F1A;
+    cursor: pointer;
+}
