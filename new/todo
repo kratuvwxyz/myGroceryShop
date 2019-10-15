@@ -2,7 +2,7 @@
 
 Need for this project:
     version control:
-        ☐ github
+        ✔ github @done (10/14/2019, 7:54:05 PM)
     store data:
         ☐ Firebase
     authentication:
@@ -10,6 +10,7 @@ Need for this project:
     API:
         search recipes:
         ☐ edamam — https://developer.edamam.com/edamam-docs-recipe-api
+        ☐ spoonacular — https://spoonacular.com/food-api @critical 
         search nutrition:
 
         sms:
@@ -21,9 +22,9 @@ Need for this project:
 Content:
     header:
         ☐ header menu
-            ☐ hamburger sidebar menu toggle
-            ☐ Title
-            ☐ account info
+            ✔ hamburger sidebar menu toggle @done (10/14/2019, 7:57:08 PM)
+            ✔ Title @done (10/14/2019, 7:57:11 PM)
+            ☐ account info @critical remove it
                 before log in:
                 ☐ sign up
                 ☐ log in
@@ -34,25 +35,33 @@ Content:
             ☐ contact
 
     sidebar menu:
-        ☐ title
-        ☐ close menu
-        ☐ home
-        ☐ about
-        ☐ leftover groceries
+        backend functions:
+            ☐ when click, highlight that or scroll and hightlight that menu item @high 
+        ✔ title @done (10/14/2019, 7:59:07 PM)
+        ✔ close menu @done (10/14/2019, 7:59:13 PM)
+        ✔ home @done (10/14/2019, 7:59:25 PM)
+        ✔ about @done (10/14/2019, 7:59:44 PM)
+        ☐ leftover groceries @critical 
         recipes:
-            ☐ search from leftover
-            ☐ search new recipes
+            ☐ search from leftover @critical 
+            ☐ search new recipes @critical 
             disable if it's not logged in:
-                ☐ add recipe
-                ☐ my recipes
-        ☐ nutrition
+                ☐ add recipe @high 
+                ☐ my recipes @high 
+        ☐ nutrition @low    
+        ☐ hr line
+        account login:
+            ☐ sign up
+            ☐ log in
+        account:
+            ☐ manage account
+            ☐ log out
+            ☐ feedback or questions
+        ☐ hr line
         disable if it's not logged in:
             ☐ my shopping list
             ☐ sms my list
-            account:
-                ☐ manage account
-                ☐ log out
-                ☐ feedback or questions
+        ☐ hr line
         contact:
             ☐ support
             ☐ rate us
