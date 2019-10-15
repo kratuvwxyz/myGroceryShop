@@ -44,12 +44,21 @@ Content:
     -- account info
     -- log out
 - groceries
-    -- leftover groceries
+    -- add leftover groceries
     -- new shopping list
     -- sms my list
+    -- delivery
 - recipes
-    -- Search from Leftover
-    -- 
+    -- search from Leftover
+    -- new recipe search
+    -- add your recipe
+    -- my recipe book
+    -- check nutrition
+- contact
+    -- about
+    -- support
+    -- rate us
+
 
         backend functions:
             ☐ when click, highlight that or scroll and hightlight that menu item @high 
