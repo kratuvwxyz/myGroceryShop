@@ -19,8 +19,8 @@ body {
 }
 
 .jarallax-02 {
-    background-image: url('../images/2.jpg');
-    height: 400px;
+    background-image: url('../images/winter-vegetarian-or-vegan-food-cooking-PCHAFK8.jpg');
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,8 +28,19 @@ body {
 }
 
 .jarallax-03 {
-    background-image: url('../images/3.jpg');
-    height: 400px;
+    background-image: url('../images/close-up-of-fresh-eco-vegetables-in-coton-bags-on-KQ5824M.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jarallax-04 {
+    background-image: url('../images/thanksgiving-celebration-traditional-dinner-table-PZUQLYF.jpg');
+    /* height: 400px; */
+    padding-top: 50vh;
+    padding-bottom: 50vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,6 +150,23 @@ a:focus {
 #sidebar ul li a:hover {
     color: #BC5A33;
     background: #D7D01D;
+    box-shadow: .25rem .25rem .5rem .05rem #312F1A66;
+    font-size: 1.25em;
+    -webkit-transition: font-size 1000ms linear;
+    -moz-transition: font-size 1000ms linear;
+    -o-transition: font-size 1000ms linear;
+    -ms-transition: font-size 1000ms linear;
+    transition: font-size 1000ms linear;
+    -webkit-transition: background-color 500ms ease-out;
+    -moz-transition: background-color 500ms ease-out;
+    -o-transition: background-color 500ms ease-out;
+    -ms-transition: background-color 500ms ease-out;
+    transition: background-color 500ms ease-out;
+    -webkit-transition: box-shadow 250ms ease-out;
+    -moz-transition: box-shadow 250ms ease-out;
+    -o-transition: box-shadow 250ms ease-out;
+    -ms-transition: box-shadow 250ms ease-out;
+    transition: box-shadow 250ms ease-out;
 }
 
 #sidebar ul li.active>a,
@@ -217,9 +245,11 @@ a.article:hover {
     #sidebar {
         left: -250px;
     }
+
     #sidebar.active {
         left: 0;
     }
+
     #sidebarCollapse span {
         display: none;
     }
@@ -273,22 +303,22 @@ a.article:hover {
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
-    
+
 .slider:hover {
     opacity: 1;
 }
-    
+
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
+    width: 45px;
     height: 25px;
     background: #312F1A;
     cursor: pointer;
 }
-    
+
 .slider::-moz-range-thumb {
-    width: 25px;
+    width: 45px;
     height: 25px;
     background: #312F1A;
     cursor: pointer;

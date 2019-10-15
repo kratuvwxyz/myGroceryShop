@@ -15,12 +15,12 @@ toggleFunction = () => {
 }
 //if click on body to toggle this
 toggleBodyFunction = () => {
-    if($('#sidebar').hasClass('deactive')) {
+    if ($('#sidebar').hasClass('deactive')) {
         //console.log('this is toggleBodyfunction');
         $('#sidebar').removeClass('deactive');
         $('#headOne').removeClass('deactive');
-    } 
-    else if($('#sidebar').hasClass('active')) {
+    }
+    else if ($('#sidebar').hasClass('active')) {
         //console.log('do something like this');
         $('#sidebar').toggleClass('active');
         $('#headOne').toggleClass('activeOne');
@@ -54,7 +54,7 @@ recFolder('New Recipes', '.new-recipe-04', 'Search', '.r1', 'BBCC00');
 recFolder('Nutrition', '.nutrition-05', 'Search', '.r1', 'AACC00');
 
 
-$(document).on('click', '#newRecipeSearchBtn', (event)=>{
+$(document).on('click', '#newRecipeSearchBtn', (event) => {
     event.preventDefault();
 
     // gather values
@@ -74,7 +74,7 @@ $(document).on('click', '#newRecipeSearchBtn', (event)=>{
     // special kind of request
     // adding selection in an array first
     let e = [];
-    $('#checkInteruptType input:checked').each(function() {
+    $('#checkInteruptType input:checked').each(function () {
         e.push($(this).val());
     });
     // use this array to join in a string
@@ -90,23 +90,23 @@ $(document).on('click', '#newRecipeSearchBtn', (event)=>{
     $('form').get(0).reset();
     //console.log(a1,b2,c3,d4,f5,g6,h7);
     $.ajax({
-        url:"https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/complexSearch?includeIngredients="+a1+"&type="+b2+"&cuisine="+c3+"&diet="+d4+"&intolerances="+f5+"&excludeIngredients="+g6+"&maxReadyTime="+h7,
-        beforeSend: function(xhr) { 
-          xhr.setRequestHeader("X-Mashape-Key", "B6aQubD0MzmshaDtr6oXZPh36w3Qp17hKoqjsnoDFeTMOaQT31");
+        url: "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/complexSearch?includeIngredients=" + a1 + "&type=" + b2 + "&cuisine=" + c3 + "&diet=" + d4 + "&intolerances=" + f5 + "&excludeIngredients=" + g6 + "&maxReadyTime=" + h7,
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader("X-Mashape-Key", "B6aQubD0MzmshaDtr6oXZPh36w3Qp17hKoqjsnoDFeTMOaQT31");
         },
         type: 'GET',
         dataType: 'json',
         contentType: 'application/json',
-        error: function(a){
+        error: function (a) {
             //console.log("Cannot get data");
             //console.log(a);
-            
+
         },
         success: function (data) {
-          //console.log(data);
-        }        
-      }).then(function(response){
+            //console.log(data);
+        }
+    }).then(function (response) {
         let recipeList = response.results;
         //console.log(recipeList);
-      })
+    })
 });
