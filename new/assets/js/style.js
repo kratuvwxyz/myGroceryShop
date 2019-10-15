@@ -9,20 +9,28 @@ $(window).on('scroll', () => {
 
 //Menu toggle
 toggleFunction = () => {
-    $('#sidebar').toggleClass('active');
-    $('#headOne').toggleClass('activeOne');
+    //console.log('this is toggleFunction');
+    
+    $('#sidebar').toggleClass('active').addClass('deactive');
+    $('#headOne').toggleClass('activeOne').addClass('deactive');
 }
 
 toggleBodyFunction = () => {
-    if($('.active') === false){
-        toggleFunction();
-    }
+    if($('#sidebar').hasClass('deactive')) {
+        //console.log('this is toggleBodyfunction');
+        $('#sidebar').removeClass('deactive');
+        $('#headOne').removeClass('deactive');
+    } else if($('#sidebar').hasClass('active')) {
+        //console.log('do something like this');
+        $('#sidebar').toggleClass('active');
+        $('#headOne').toggleClass('activeOne');
+    };
 }
 
 //Menu slide over
+$(document).on('click', 'body', toggleBodyFunction);
 $(document).on('click', '#sidebarCollapse', toggleFunction);
 $(document).on('click', '#sidebarCollapse1', toggleFunction);
-$(document).on('click', 'body', toggleBodyFunction);
 $(document).on('click', '#homeLi', toggleFunction);
 $(document).on('click', '#aboutLi', toggleFunction);
 
@@ -78,9 +86,9 @@ $(document).on('click', '#newRecipeSearchBtn', (event)=>{
     // Max time range
     let h7 = $('#rangeDemo').val();
     // 8 instructionsRequired = true
-    console.log(a1,b2,c3,d4,f5,g6,h7);
+    //console.log(a1,b2,c3,d4,f5,g6,h7);
     $('form').get(0).reset();
-    console.log(a1,b2,c3,d4,f5,g6,h7);
+    //console.log(a1,b2,c3,d4,f5,g6,h7);
     $.ajax({
         url:"https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/complexSearch?includeIngredients="+a1+"&type="+b2+"&cuisine="+c3+"&diet="+d4+"&intolerances="+f5+"&excludeIngredients="+g6+"&maxReadyTime="+h7,
         beforeSend: function(xhr) { 
@@ -90,15 +98,15 @@ $(document).on('click', '#newRecipeSearchBtn', (event)=>{
         dataType: 'json',
         contentType: 'application/json',
         error: function(a){
-            console.log("Cannot get data");
-            console.log(a);
+            //console.log("Cannot get data");
+            //console.log(a);
             
         },
         success: function (data) {
-          console.log(data);
+          //console.log(data);
         }        
       }).then(function(response){
         let recipeList = response.results;
-        console.log(recipeList);
+        //console.log(recipeList);
       })
 });

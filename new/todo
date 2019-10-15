@@ -35,6 +35,22 @@ Content:
             ☐ contact
 
     sidebar menu:
+
+- close menu
+- account
+    -- log in
+    -- sign up
+    -- or --
+    -- account info
+    -- log out
+- groceries
+    -- leftover groceries
+    -- new shopping list
+    -- sms my list
+- recipes
+    -- Search from Leftover
+    -- 
+
         backend functions:
             ☐ when click, highlight that or scroll and hightlight that menu item @high 
         ✔ title @done (10/14/2019, 7:59:07 PM)
