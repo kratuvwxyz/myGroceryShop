@@ -19,164 +19,166 @@
 </head>
 
 <body>
-    <!-- main page with parallax -->
-    <div class="jarallax-01">
-        <!-- Sidebar Menu -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <a href="index.html">
-                    <h3 class="text-uppercase" style="line-height: 1em">
-                        &#160;My<br><strong
-                            style="font-size: 1.5em; line-height: 1.0625em;">Grocery.</strong><br>&#160;Shop
-                    </h3>
-                </a>
+    <!-- Sidebar Menu -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html">
+                <h3 class="text-uppercase" style="line-height: 1em">
+                    &#160;My<br><strong
+                        style="font-size: 1.5em; line-height: 1.0625em;">Grocery.</strong><br>&#160;Shop
+                </h3>
+            </a>
+        </div>
+
+        <button type="button" id="sidebarCollapse1" class="btn btn-outline-dark btn-block">
+            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> &#160;CLOSE MENU
+        </button>
+
+        <ul class="list-unstyled components">
+            <!-- Home  -->
+            <li id="homeLi"><a href="#"><span class="boxMenuAF"><i class="fa fa-home"
+                            aria-hidden="true"></i></span> HOME</i></a></li>
+            <!-- About  -->
+            <li id="aboutLi"><a href="#about"><span class="boxMenuAF"><i class="fa fa-check"
+                            aria-hidden="true"></i></span> ABOUT</a>
+            </li>
+            <!-- Leftover Grocery  -->
+            <li><a href="#"><span class="boxMenuAF"><i class="fa fa-leaf" aria-hidden="true"></i></span> Leftover
+                    Groceries</a></li>
+            <!-- Recipes  -->
+            <li>
+                <a href="#recipeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
+                        class="boxMenuAF"><i class="fa fa-cutlery" aria-hidden="true"></i></span> RECIPES</a>
+                <ul class="collapse list-unstyled" id="recipeSubmenu">
+                    <li>
+                        <a href="#recipeSearch"><span class="boxMenuAF"><i class="fa fa-search align-bottom"
+                                    aria-hidden="true"></i></span> Search From Leftover</a>
+                    </li>
+                    <li>
+                        <a href="#recipeSearch"><span class="boxMenuAF"><i class="fa fa-search align-bottom"
+                                    aria-hidden="true"></i></span> Search New Recipes</a>
+                    </li>
+                    <li>
+                        <a href="#recipeSearch"><span class="boxMenuAF"><i class="fa fa-plus align-bottom"
+                                    aria-hidden="true"></i></span> Add Recipe</a>
+                    </li>
+                    <li>
+                        <a href="#recipeSearch"><span class="boxMenuAF"><i class="fa fa-book align-bottom"
+                                    aria-hidden="true"></i></span> My Recipes</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="boxMenuAF"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+                    NUTRITION</a>
+            </li>
+            <li>
+                <a href="#"><span class="boxMenuAF"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    SHOPING LIST</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled components">
+            <p class="text-uppercase">Contact</p>
+            <!-- Email  -->
+            <li><a href="#"><span class="boxMenuAF"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    SUPPORT</a></li>
+            <!-- Rating  -->
+            <li><a href="#"><span class="boxMenuAF"><i class="fa fa-heart" aria-hidden="true"></i></span> RATE
+                    US</a></li>
+
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+            <!-- <li>
+                <a href="#" class="download">Download source</a>
+            </li> -->
+            <!-- <li>
+                <a href="" class="article">Back to article</a>
+            </li> -->
+        </ul>
+        <h6 class="version p-3"></h6>
+    </nav>
+    <!-- Main Container -->
+    <div id="mainContainer">
+        <!-- main page with parallax -->
+        <div class="jarallax-01">
+            <!-- Page Content  -->
+            <div id="content">
+    
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+    
+                        <button type="button" id="sidebarCollapse" class="btn btn-dark ml-2">
+                            <i class="fa fa-bars" aria-hidden="true" id="hamburgerBtn"></i>
+                        </button>
+                        <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-align-justify"></i>
+                        </button> -->
+                        <h1 id="headOne" class="pl-3 pt-2 pr-2" style="letter-spacing: 2px;">
+                            <a href="index.html">MY<strong>GROCERY</strong>SHOP</a>
+                        </h1>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="nav-item pr-2">
+                                    <a class="nav-link btn btn-dark" href="#">Sign Up</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-dark" href="#">Log In</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+    
+                <!-- <div class="line"></div> -->
+    
             </div>
-
-            <button type="button" id="sidebarCollapse1" class="btn btn-outline-dark btn-block">
-                <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> &#160;CLOSE MENU
-            </button>
-
-            <ul class="list-unstyled components">
-                <!-- Home  -->
-                <li id="homeLi"><a href="#"><span class="boxMenuAF"><i class="fa fa-home"
-                                aria-hidden="true"></i></span> HOME</i></a></li>
-                <!-- About  -->
-                <li id="aboutLi"><a href="#about"><span class="boxMenuAF"><i class="fa fa-check"
-                                aria-hidden="true"></i></span> ABOUT</a>
-                </li>
-                <!-- Leftover Grocery  -->
-                <li><a href="#"><span class="boxMenuAF"><i class="fa fa-leaf" aria-hidden="true"></i></span> Leftover
-                        Groceries</a></li>
-                <!-- Recipes  -->
-                <li>
-                    <a href="#recipeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span
-                            class="boxMenuAF"><i class="fa fa-cutlery" aria-hidden="true"></i></span> RECIPES</a>
-                    <ul class="collapse list-unstyled" id="recipeSubmenu">
-                        <li>
-                            <a href="#recipeSearch"><span class="boxMenuAF"><i class="fa fa-search align-bottom"
-                                        aria-hidden="true"></i></span> Search From Leftover</a>
-                        </li>
-                        <li>
-                            <a href="#recipeSearch"><span class="boxMenuAF"><i class="fa fa-search align-bottom"
-                                        aria-hidden="true"></i></span> Search New Recipes</a>
-                        </li>
-                        <li>
-                            <a href="#recipeSearch"><span class="boxMenuAF"><i class="fa fa-plus align-bottom"
-                                        aria-hidden="true"></i></span> Add Recipe</a>
-                        </li>
-                        <li>
-                            <a href="#recipeSearch"><span class="boxMenuAF"><i class="fa fa-book align-bottom"
-                                        aria-hidden="true"></i></span> My Recipes</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><span class="boxMenuAF"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
-                        NUTRITION</a>
-                </li>
-                <li>
-                    <a href="#"><span class="boxMenuAF"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                        SHOPING LIST</a>
-                </li>
-            </ul>
-            <ul class="list-unstyled components">
-                <p class="text-uppercase">Contact</p>
-                <!-- Email  -->
-                <li><a href="#"><span class="boxMenuAF"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        SUPPORT</a></li>
-                <!-- Rating  -->
-                <li><a href="#"><span class="boxMenuAF"><i class="fa fa-heart" aria-hidden="true"></i></span> RATE
-                        US</a></li>
-
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <!-- <li>
-                    <a href="#" class="download">Download source</a>
-                </li> -->
-                <!-- <li>
-                    <a href="" class="article">Back to article</a>
-                </li> -->
-            </ul>
-            <h6 class="version p-3"></h6>
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark ml-2">
-                        <i class="fa fa-bars" aria-hidden="true" id="hamburgerBtn"></i>
-                    </button>
-                    <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button> -->
-                    <h1 id="headOne" class="pl-3 pt-2 pr-2" style="letter-spacing: 2px;">
-                        <a href="index.html">MY<strong>GROCERY</strong>SHOP</a>
-                    </h1>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item pr-2">
-                                <a class="nav-link btn btn-dark" href="#">Sign Up</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-dark" href="#">Log In</a>
-                            </li>
-                        </ul>
+        </div>
+    
+        <!-- about  -->
+        <div class="container-fluid py-5" id='about'>
+            <div class="row p-5">
+                <div class="jumbotron-fluid">
+                    <h1>About Grocery</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero dolorum eius ad. Dolores,
+                        nesciunt cum accusamus autem, quod fugiat quia ab, illum molestiae vero harum id minus temporibus
+                        quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi esse labore saepe
+                        architecto explicabo placeat expedita cum, suscipit modi, repudiandae, inventore itaque non.
+                        Exercitationem eligendi illo sed, nemo delectus impedit.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit amet temporibus blanditiis
+                        rem fuga perspiciatis qui. Consectetur ipsa veritatis alias amet? Sint laboriosam totam ea aperiam
+                        porro esse, nemo sed.</p>
+                    <h3>Not sure what to eat? My Grocery Shop can help!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus architecto saepe natus incidunt
+                        repellendus distinctio quaerat expedita sequi at dignissimos eaque quisquam ducimus tenetur, cumque,
+                        nobis commodi, consequuntur impedit? Voluptates?</p>
+                    <div class="row">
+                        <div class="col-md-4"><i class="fa fa-search" aria-hidden="true"></i> Search for a recipes by
+                            craving, restrictions, or what you already have in your fridge.</div>
+                        <div class="col-md-4">Review and add missing ingredients to your shopping list.</div>
+                        <div class="col-md-4">Search the nutritional value of your ingredients to make sure they are good
+                            for your body.</div>
                     </div>
                 </div>
-            </nav>
-
-            <!-- <div class="line"></div> -->
-
-        </div>
-    </div>
-
-    <!-- about  -->
-    <div class="container-fluid py-5" id='about'>
-        <div class="row p-5">
-            <div class="jumbotron-fluid">
-                <h1>About Grocery</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero dolorum eius ad. Dolores,
-                    nesciunt cum accusamus autem, quod fugiat quia ab, illum molestiae vero harum id minus temporibus
-                    quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi esse labore saepe
-                    architecto explicabo placeat expedita cum, suscipit modi, repudiandae, inventore itaque non.
-                    Exercitationem eligendi illo sed, nemo delectus impedit.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit amet temporibus blanditiis
-                    rem fuga perspiciatis qui. Consectetur ipsa veritatis alias amet? Sint laboriosam totam ea aperiam
-                    porro esse, nemo sed.</p>
-                <h3>Not sure what to eat? My Grocery Shop can help!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus architecto saepe natus incidunt
-                    repellendus distinctio quaerat expedita sequi at dignissimos eaque quisquam ducimus tenetur, cumque,
-                    nobis commodi, consequuntur impedit? Voluptates?</p>
-                <div class="row">
-                    <div class="col-md-4"><i class="fa fa-search" aria-hidden="true"></i> Search for a recipes by
-                        craving, restrictions, or what you already have in your fridge.</div>
-                    <div class="col-md-4">Review and add missing ingredients to your shopping list.</div>
-                    <div class="col-md-4">Search the nutritional value of your ingredients to make sure they are good
-                        for your body.</div>
-                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Let's Get Cooking with parallax -->
-    <div class="container-fluid jarallax-02">
-        <div class="display-4 centerMiddle">Let's Get Cooking</div>
-    </div>
-
-    <!-- 4 columns with add, view, search and find -->
-    <div class="container-fluid py-5 jarallax-03" id="recipeSearch">
-        <div class="r1 row"></div>
-    </div>
-
-    <!-- view shopping list with parallax  -->
-    <div class="container-fluid jarallax-03">
-        <div class="display-4 centerMiddle">View Shopping List</div>
+    
+        <!-- Let's Get Cooking with parallax -->
+        <div class="container-fluid jarallax-02">
+            <div class="display-4 centerMiddle">Let's Get Cooking</div>
+        </div>
+    
+        <!-- 4 columns with add, view, search and find -->
+        <div class="container-fluid py-5 jarallax-03" id="recipeSearch">
+            <div class="r1 row"></div>
+        </div>
+    
+        <!-- view shopping list with parallax  -->
+        <div class="container-fluid jarallax-03">
+            <div class="display-4 centerMiddle">View Shopping List</div>
+        </div>
     </div>
 
     <!-- modals  -->

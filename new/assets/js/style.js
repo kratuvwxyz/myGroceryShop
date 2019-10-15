@@ -10,17 +10,17 @@ $(window).on('scroll', () => {
 //Menu toggle
 toggleFunction = () => {
     //console.log('this is toggleFunction');
-    
     $('#sidebar').toggleClass('active').addClass('deactive');
     $('#headOne').toggleClass('activeOne').addClass('deactive');
 }
-
+//if click on body to toggle this
 toggleBodyFunction = () => {
     if($('#sidebar').hasClass('deactive')) {
         //console.log('this is toggleBodyfunction');
         $('#sidebar').removeClass('deactive');
         $('#headOne').removeClass('deactive');
-    } else if($('#sidebar').hasClass('active')) {
+    } 
+    else if($('#sidebar').hasClass('active')) {
         //console.log('do something like this');
         $('#sidebar').toggleClass('active');
         $('#headOne').toggleClass('activeOne');
@@ -28,7 +28,7 @@ toggleBodyFunction = () => {
 }
 
 //Menu slide over
-$(document).on('click', 'body', toggleBodyFunction);
+$(document).on('click', '#mainContainer', toggleBodyFunction);
 $(document).on('click', '#sidebarCollapse', toggleFunction);
 $(document).on('click', '#sidebarCollapse1', toggleFunction);
 $(document).on('click', '#homeLi', toggleFunction);
