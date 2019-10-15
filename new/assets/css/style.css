@@ -258,6 +258,7 @@ a.article:hover {
 #sidebarCollapse1 {
     border: none;
     border-radius: 0;
+    text-align: left;
 }
 
 .centerMiddle {
@@ -322,4 +323,17 @@ a.article:hover {
     height: 25px;
     background: #312F1A;
     cursor: pointer;
+}
+
+body {
+    background-image: url('../images/2.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    background-color: #BDC18Ecc;
 }
