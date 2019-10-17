@@ -1,9 +1,11 @@
 //Scroll menu display
 $(window).on('scroll', () => {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        $('.navbar').css('background', '#C2BE8E').css('z-index', 998);
+        // $('#navbar').addClass('background-image-1');
+        $('#navbar').css('background', '#FDEDB1');
+        // $('#navbar').css('background-image', 'url(' + ../images/food.png + ')');
     } else {
-        $('.navbar').css('background', '#C2BE8EB3');
+        $('#navbar').css('background', '#FDEDB166');
     }
 });
 
@@ -37,7 +39,7 @@ $(document).on('click', '#aboutLi', toggleFunction);
 //Receipe Sections
 //a = ; b = ; c = ; d = ; e = background color
 recFolder = (a, b, c, d, e) => {
-    let aa = $('<div></div>').addClass('col-6 col-md-3').css('background-color', '#' + e);
+    let aa = $('<div></div>').addClass('col-sm-6').css('background-color', '#' + e);
     let bb = $('<div></div>').addClass('row');
     let cc = $('<div></div>').addClass('h3 p-3').text(a);
     let br = $('<br><br><br>');

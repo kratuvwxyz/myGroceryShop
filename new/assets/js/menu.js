@@ -65,78 +65,26 @@
     liMenu ('jqmAccount', '#', 'user', 'Account Info', '#jqmAccount', '');
     // logout
     liMenu ('jqmLogOut', '#', 'star-o', 'Log Out', '#jqmAccount', '');
+    
+    // groceries
+    ulMenu ('jqmGroceries', 'Groceries');
+    // add leftover groceries
+    liMenu ('jqmAddLeftOver', '#', 'pencil', 'Add Leftover', '#jqmGroceries', 'show');
+    // my new shopping groceries
+    liMenu ('jqmMyShopList', '#', 'check-square-o', 'My New List', '#jqmGroceries', 'show');
+    // SMS my list
+    liMenu ('jqmSMSList', '#', 'paper-plane', 'SMS My List', '#jqmGroceries', 'show');
+    // delivery
+    liMenu ('jqmDeliverList', '#', 'truck', 'My New List', '#jqmGroceries', 'show');
 
-
-
-/* <ul class="">
-<p class="">Contact</p>
-            <!-- Home  -->
-            <li id="homeLi"><a href="#"><span class=""><i class="fa fa-home" aria-hidden="true"></i></span>
-                    HOME</i></a></li>
-            <!-- About  -->
-            <li id="aboutLi"><a href="#about"><span class="boxMenuAF"><i class="fa fa-check"
-                            aria-hidden="true"></i></span> ABOUT</a>
-            </li>
-            <!-- Leftover Grocery  -->
-            <li><a href="#"><span class="boxMenuAF"><i class="fa fa-leaf" aria-hidden="true"></i></span> Leftover
-                    Groceries</a></li>
-            <!-- Recipes  -->
-            <li>
-                <a href="#recipeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <span class="boxMenuAF">
-                        <i class="fa fa-cutlery" aria-hidden="true"></i>
-                    </span>
-                    RECIPES
-                </a>
-                <ul class="collapse list-unstyled" id="recipeSubmenu">
-                    <li>
-                        <a href="#recipeSearch">
-                            <span class="boxMenuAF">
-                                <i class="fa fa-search align-bottom" aria-hidden="true"></i>
-                            </span>
-                            Search From Leftover
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#recipeSearch">
-                            <span class="boxMenuAF">
-                                <i class="fa fa-search align-bottom" aria-hidden="true"></i>
-                            </span>
-                            Search New Recipes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#recipeSearch">
-                            <span class="boxMenuAF">
-                                <i class="fa fa-plus align-bottom" aria-hidden="true"></i>
-                            </span>
-                            Add Recipe
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#recipeSearch">
-                            <span class="boxMenuAF">
-                                <i class="fa fa-book align-bottom" aria-hidden="true"></i>
-                            </span>
-                            My Recipes
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="boxMenuAF">
-                        <i class="fa fa-pie-chart" aria-hidden="true"></i>
-                    </span>
-                    NUTRITION
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="boxMenuAF">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </span>
-                    SHOPING LIST
-                </a>
-            </li>
-        </ul> */
+    // recipes
+    ulMenu ('jqmRecipes', 'Recipe Search');
+    // search new recipes from leftover
+    liMenu ('jqmSearchLeftOver', '#', 'share-square-o', 'From Leftover', '#jqmRecipes', 'show');
+    // search new recipes
+    liMenu ('jqmSearchReci', '#', 'search-plus', 'For New Test', '#jqmRecipes', 'show');
+    // SMS my list
+    liMenu ('jqmSMSList', '#', 'paper-plane', 'SMS My List', '#jqmRecipes', 'show');
+    // delivery
+    liMenu ('jqmDeliverList', '#', 'truck', 'My New List', '#jqmRecipes', 'show');
+    

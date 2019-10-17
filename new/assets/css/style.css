@@ -63,15 +63,22 @@ a:focus {
     transition: all 0.3s;
 }
 
-.navbar {
+#navbar {
     padding: 15px 10px;
-    background: #C2BE8EB3;
+    background: #FDEDB166;
+    background-repeat: repeat;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100vw;
+    /* z-index: 998; */
+}
+
+.background-image-1 {
+    background-image: url('../images/food.png');
+    background-repeat: repeat;
 }
 
 .navbar-btn {
@@ -98,16 +105,17 @@ a:focus {
 } */
 
 #sidebar {
-    width: 250px;
+    width: 300px;
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -300px;
     height: 100vh;
     z-index: 999;
     background: #BDC18E;
     color: #312F1A;
     transition: all 0.3s;
-    overflow-y: scroll;
+    overflow: auto;
+    /* overflow-y: scroll; */
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -243,7 +251,7 @@ a.article:hover {
 
 @media (max-width: 768px) {
     #sidebar {
-        left: -250px;
+        left: -300px;
     }
 
     #sidebar.active {
