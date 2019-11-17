@@ -2,11 +2,23 @@
     DEMO STYLE
 */
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+/* @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"; */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200i,400,600,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap');
+
+:root {
+    /* Color */
+    --primary-color: black;
+    --secondary-color: #FDEDB1;
+    --black: #1a1a1a;
+    /* Fonts */
+    --primary-font: 'Noto Serif', serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #FDEDB1;
+    font-family: var(--secondary-font);
+    background: var(--black);
 }
 
 .jarallax-01 {
@@ -48,9 +60,9 @@ body {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--primary-font);
     font-size: 1.1em;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7em;
     color: #312F1A;
 }
@@ -73,7 +85,7 @@ a:focus {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100vw;
-    /* z-index: 998; */
+    z-index: 998;
 }
 
 .background-image-1 {
