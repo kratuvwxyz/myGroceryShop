@@ -23,11 +23,9 @@ toggleBodyFunction = () => {
 $(document).on('click', '#mainContainer', toggleBodyFunction);
 $(document).on('click', '#sidebarCollapse', toggleFunction);
 $(document).on('click', '#sidebarCollapse1', toggleFunction);
-$(document).on('click', '#homeLi', toggleFunction);
-$(document).on('click', '#aboutLi', toggleFunction);
 
-
-
+// When menu item click, close the menu
+$(document).on('click', '#jqMenu', toggleFunction);
 
 // a = id name
 // p = copy text string
@@ -121,7 +119,6 @@ liMenu('jqmNutrition', '#', 'bar-chart', 'Check Nutrition', '#jqmRecipes', 'show
 ulMenu('jqmContact', 'Contact');
 // about an app
 liMenu('jqmAbout', '#about', 'info-circle', 'About Us', '#jqmContact', 'show');
-$(document).on('click', '#jqmAbout', toggleFunction);
 // support for this app
 liMenu('jqmSupport', '#', 'support', 'Support', '#jqmContact', 'show');
 // rate this app
