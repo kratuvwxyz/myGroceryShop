@@ -77,11 +77,11 @@
     // search new recipes
     liMenu ('jqmSearchReci', '#', 'search-plus', 'For New Test', '#jqmRecipes', 'show');
     // add your recipe
-    liMenu ('jqmSMSList', '#', 'paper-plane', 'Add Reipe', '#jqmRecipes', 'show');
+    liMenu ('jqmSMSList', '#', 'plus-circle', 'Add Reipe', '#jqmRecipes', 'show');
     // my recipe book
-    liMenu ('jqmDeliverList', '#', 'truck', 'My Recipe Book', '#jqmRecipes', 'show');
+    liMenu ('jqmDeliverList', '#', 'bookmark', 'My Recipe Book', '#jqmRecipes', 'show');
     // check nutrition
-    liMenu ('jqmDeliverList', '#', 'truck', 'Check Nutrition', '#jqmRecipes', 'show');
+    liMenu ('jqmDeliverList', '#', 'bar-chart', 'Check Nutrition', '#jqmRecipes', 'show');
     
     // contact
     // -- about
@@ -90,11 +90,11 @@
     // 
     ulMenu ('jqmContact', 'Contact');
     // search new recipes from leftover
-    liMenu ('jqmSearchLeftOver', '#', 'share-square-o', 'About Us', '#jqmContact', 'show');
+    liMenu ('jqmSearchLeftOver', '#', 'info-circle', 'About Us', '#jqmContact', 'show');
     // search new recipes
-    liMenu ('jqmSearchReci', '#', 'search-plus', 'Support', '#jqmContact', 'show');
+    liMenu ('jqmSearchReci', '#', 'support', 'Support', '#jqmContact', 'show');
     // add your recipe
-    liMenu ('jqmSMSList', '#', 'paper-plane', 'Rate Us', '#jqmContact', 'show');
+    liMenu ('jqmSMSList', '#', 'heart', 'Rate Us', '#jqmContact', 'show');
     // facebook
-    liMenu ('jqmSMSList', '#', 'paper-plane', 'Facebook', '#jqmContact', 'show');
+    liMenu ('jqmSMSList', '#', 'facebook', 'Facebook', '#jqmContact', 'show');
 
