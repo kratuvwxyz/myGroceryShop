@@ -90,7 +90,7 @@
     // 
     ulMenu ('jqmContact', 'Contact');
     // search new recipes from leftover
-    liMenu ('jqmSearchLeftOver', '#', 'info-circle', 'About Us', '#jqmContact', 'show');
+    liMenu ('jqmSearchLeftOver', '#about', 'info-circle', 'About Us', '#jqmContact', 'show');
     // search new recipes
     liMenu ('jqmSearchReci', '#', 'support', 'Support', '#jqmContact', 'show');
     // add your recipe
