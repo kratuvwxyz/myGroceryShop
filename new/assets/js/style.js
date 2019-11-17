@@ -9,33 +9,6 @@ $(window).on('scroll', () => {
     }
 });
 
-//Menu toggle
-toggleFunction = () => {
-    //console.log('this is toggleFunction');
-    $('#sidebar').toggleClass('active').addClass('deactive');
-    $('#headOne').toggleClass('activeOne').addClass('deactive');
-}
-//if click on body to toggle this
-toggleBodyFunction = () => {
-    if ($('#sidebar').hasClass('deactive')) {
-        //console.log('this is toggleBodyfunction');
-        $('#sidebar').removeClass('deactive');
-        $('#headOne').removeClass('deactive');
-    }
-    else if ($('#sidebar').hasClass('active')) {
-        //console.log('do something like this');
-        $('#sidebar').toggleClass('active');
-        $('#headOne').toggleClass('activeOne');
-    };
-}
-
-//Menu slide over
-$(document).on('click', '#mainContainer', toggleBodyFunction);
-$(document).on('click', '#sidebarCollapse', toggleFunction);
-$(document).on('click', '#sidebarCollapse1', toggleFunction);
-$(document).on('click', '#homeLi', toggleFunction);
-$(document).on('click', '#aboutLi', toggleFunction);
-
 //Receipe Sections
 //a = ; b = ; c = ; d = ; e = background color
 recFolder = (a, b, c, d, e) => {
