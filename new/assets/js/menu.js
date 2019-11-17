@@ -1,27 +1,3 @@
-/*
-- account
-    -- log in
-    -- sign up
-    -- or --
-    -- account info
-    -- log out
-- groceries
-    -- add leftover groceries
-    -- new shopping list
-    -- sms my list
-    -- delivery
-- recipes
-    -- search from Leftover
-    -- new recipe search
-    -- add your recipe
-    -- my recipe book
-    -- check nutrition
-- contact
-    -- about
-    -- support
-    -- rate us
-*/
-
     
     // a = id name
     // p = copy text string
@@ -56,6 +32,12 @@
     }
 
     // account
+    // -- log in
+    // -- sign up
+    // -- or --
+    // -- account info
+    // -- log out
+    //
     ulMenu ('jqmAccount', 'Account');
     // login
     liMenu ('jqmLogIn', '#', 'star', 'Log In', '#jqmAccount', 'show');
@@ -67,6 +49,11 @@
     liMenu ('jqmLogOut', '#', 'star-o', 'Log Out', '#jqmAccount', '');
     
     // groceries
+    // -- add leftover groceries
+    // -- new shopping list
+    // -- sms my list
+    // -- delivery
+    // 
     ulMenu ('jqmGroceries', 'Groceries');
     // add leftover groceries
     liMenu ('jqmAddLeftOver', '#', 'pencil', 'Add Leftover', '#jqmGroceries', 'show');
@@ -75,16 +62,39 @@
     // SMS my list
     liMenu ('jqmSMSList', '#', 'paper-plane', 'SMS My List', '#jqmGroceries', 'show');
     // delivery
-    liMenu ('jqmDeliverList', '#', 'truck', 'My New List', '#jqmGroceries', 'show');
+    liMenu ('jqmDeliverList', '#', 'truck', 'Delivery', '#jqmGroceries', 'show');
 
     // recipes
+    // -- search from Leftover
+    // -- new recipe search
+    // -- add your recipe
+    // -- my recipe book
+    // -- check nutrition
+    // 
     ulMenu ('jqmRecipes', 'Recipe Search');
     // search new recipes from leftover
     liMenu ('jqmSearchLeftOver', '#', 'share-square-o', 'From Leftover', '#jqmRecipes', 'show');
     // search new recipes
     liMenu ('jqmSearchReci', '#', 'search-plus', 'For New Test', '#jqmRecipes', 'show');
-    // SMS my list
-    liMenu ('jqmSMSList', '#', 'paper-plane', 'SMS My List', '#jqmRecipes', 'show');
-    // delivery
-    liMenu ('jqmDeliverList', '#', 'truck', 'My New List', '#jqmRecipes', 'show');
+    // add your recipe
+    liMenu ('jqmSMSList', '#', 'paper-plane', 'Add Reipe', '#jqmRecipes', 'show');
+    // my recipe book
+    liMenu ('jqmDeliverList', '#', 'truck', 'My Recipe Book', '#jqmRecipes', 'show');
+    // check nutrition
+    liMenu ('jqmDeliverList', '#', 'truck', 'Check Nutrition', '#jqmRecipes', 'show');
     
+    // contact
+    // -- about
+    // -- support
+    // -- rate us
+    // 
+    ulMenu ('jqmContact', 'Contact');
+    // search new recipes from leftover
+    liMenu ('jqmSearchLeftOver', '#', 'share-square-o', 'About Us', '#jqmContact', 'show');
+    // search new recipes
+    liMenu ('jqmSearchReci', '#', 'search-plus', 'Support', '#jqmContact', 'show');
+    // add your recipe
+    liMenu ('jqmSMSList', '#', 'paper-plane', 'Rate Us', '#jqmContact', 'show');
+    // facebook
+    liMenu ('jqmSMSList', '#', 'paper-plane', 'Facebook', '#jqmContact', 'show');
+
