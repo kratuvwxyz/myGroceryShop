@@ -10,6 +10,8 @@
     /* Color */
     --primary-color: black;
     --secondary-color: #FDEDB1;
+    --orange: #BC5A33;
+    --yellow: #D7D01D;
     --black: #1a1a1a;
     /* Fonts */
     --primary-font: 'Noto Serif', serif;
@@ -20,6 +22,10 @@ body {
     font-family: var(--secondary-font);
     background: var(--black);
 }
+
+/* 
+    Parallax
+*/
 
 .jarallax-01 {
     background-image: url('../images/bgFull.jpeg');
@@ -59,6 +65,10 @@ body {
     background-size: cover;
 }
 
+/* 
+    Type
+*/
+
 p {
     font-family: var(--primary-font);
     font-size: 1.1em;
@@ -67,6 +77,10 @@ p {
     color: #312F1A;
 }
 
+/* 
+    Links
+*/
+
 a,
 a:hover,
 a:focus {
@@ -74,6 +88,10 @@ a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
+
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
 
 #navbar {
     padding: 15px 10px;
@@ -257,24 +275,6 @@ a.article:hover {
     transition: all 0.3s;
 }
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
-@media (max-width: 768px) {
-    #sidebar {
-        left: -300px;
-    }
-
-    #sidebar.active {
-        left: 0;
-    }
-
-    #sidebarCollapse span {
-        display: none;
-    }
-}
-
 #sidebarCollapse1 {
     border: none;
     border-radius: 0;
@@ -345,6 +345,10 @@ a.article:hover {
     cursor: pointer;
 }
 
+/* ---------------------------------------------------
+    HERO IMAGE
+----------------------------------------------------- */
+
 body {
     background-image: url('../images/2.jpg');
     height: 100vh;
@@ -354,6 +358,33 @@ body {
     background-size: cover;
 }
 
+/* ---------------------------------------------------
+    ABOUT
+----------------------------------------------------- */
+
 #about {
     background-color: #BDC18Ecc;
+}
+
+#about h2 {
+    padding-bottom: 20px;
+    color: var(--black);
+}
+
+#about h4 {
+    padding: 20px 0px;
+    color: var(--orange);
+}
+
+#howItWorks {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    grid-template-rows: 50px 1fr;
+    grid-auto-flow: column;
+}
+
+#howItWorks i {
+    font-size: 30px;
 }
