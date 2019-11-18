@@ -12,21 +12,21 @@ $(window).on('scroll', () => {
 //Receipe Sections
 //a = ; b = ; c = ; d = ; e = background color
 recFolder = (a, b, c, d, e) => {
-    let aa = $('<div></div>').addClass('col-sm-6').css('background-color', '#' + e);
-    let bb = $('<div></div>').addClass('row');
-    let cc = $('<div></div>').addClass('h3 p-3').text(a);
-    let br = $('<br><br><br>');
-    let dd = $('<div></div>').addClass('btn btn-dark btn-block btnFooter').attr('data-toggle', 'modal').attr('data-target', b).text(c);
-    $(cc).append(br);
+    let aa = $('<div></div>').addClass('z1').css('background-color', '#' + e);
+    let bb = $('<div></div>').addClass('y1');
+    let cc = $('<div></div>').addClass('h3 p-3 x1').text(a);
+    // let br = $('<br><br>');
+    let dd = $('<div></div>').addClass('btn btn-dark m-3').attr('data-toggle', 'modal').attr('data-target', b).text(c);
+    // $(cc).append(br);
     $(bb).append(cc).append(dd);
     $(aa).append(bb);
     $(d).append(aa);
 }
 
-recFolder('Leftover Groceries', '.add-to-list-01', 'Add To List', '.r1', 'DDCC00');
-recFolder('Recipes from Leftover', '.lefover-recipe-03', 'Search', '.r1', 'CCCC00');
-recFolder('New Recipes', '.new-recipe-04', 'Search', '.r1', 'BBCC00');
-recFolder('Nutrition', '.nutrition-05', 'Search', '.r1', 'AACC00');
+recFolder('Leftover Groceries', '.add-to-list-01', 'Add To List', '.rowReceip', 'DDCC00');
+recFolder('Recipes from Leftover', '.lefover-recipe-03', 'Search', '.rowReceip', 'CCCC00');
+recFolder('New Recipes', '.new-recipe-04', 'Search', '.rowReceip', 'BBCC00');
+recFolder('Nutrition', '.nutrition-05', 'Search', '.rowReceip', 'AACC00');
 
 
 $(document).on('click', '#newRecipeSearchBtn', (event) => {
