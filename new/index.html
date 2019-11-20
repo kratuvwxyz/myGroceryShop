@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <!-- Style -->
+
 </head>
 
 <body>
@@ -121,7 +123,67 @@
         <div class="modal-dialog modal-lg">
             <h5 class="display-4">Add To List</h5>
             <div class="modal-content p-4">
-                ...
+                <div>
+                    <br><span class="h5">To find the best result, please fill all inputs.</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="line"></div>
+                <!-- form starts -->
+                <form class="form-group">
+                    <!-- MealType -->
+                    <!-- <label for="Meal" class="h6title">Meal Type</label>
+                    <div class="mealType row"></div>
+                    <div class="line"></div> -->
+                    <!-- 1 -->
+                    <!-- Anything you have in mind to choose -->
+                    <label for="userIngredients" class="h6title">Anything You Have In Your Mind To Cook</label>
+                    <input type="text" class="form-control" id="userIngredients" aria-describedby="areaHelp"
+                        placeholder="For example tomato, cheese" style="background-color: #eeeeee;">
+                    <small id="areaHelp" class="form-text text-muted">A comma-separated list of ingredients that
+                        should/must be used in the recipes.</small>
+                    <div class="line"></div>
+                    <!-- 2 -->
+                    <!-- DishType -->
+                    <label for="Dish" class="h6title">Dish Type</label>
+                    <div class="dishType"></div>
+                    <div class="line"></div>
+                    <!-- 3 -->
+                    <!-- CuisionType -->
+                    <label for="Cuision" class="h6title">Cuision Type</label>
+                    <div class="cuisionType"></div>
+                    <div class="line"></div>
+                    <!-- 4 -->
+                    <!-- Healthy Diet Options  -->
+                    <label for="Diet" class="h6title">Healthy Diet Options</label>
+                    <div class="dietType"></div>
+                    <div class="line"></div>
+                    <!-- 5 -->
+                    <!-- Intolerances  -->
+                    <label for="Health" class="h6title">Ingredient that the recipes must not contain</label>
+                    <div class="specialRequest row"></div>
+                    <!-- 6 -->
+                    <label for="choiceNot"><strong>Any intolerance items that the recipes must not
+                            contain</strong></label>
+                    <input type="text" class="form-control" id="userExcludeIng" aria-describedby="areaHelp"
+                        placeholder="For example Beef, Pork" style="background-color: #eeeeee;">
+                    <small id="areaHelp" class="form-text text-muted"> A comma-separated list of ingredients or
+                        ingredient types that the recipes must not contain.</small>
+                    <div class="line"></div>
+                    <!-- 7 -->
+                    <!-- Time Range -->
+                    <label for="rangeTime" class="h6title">Time to prepare and cook the recipe</label>
+                    <input type="range" name="timeRange" id="timeRange" min="5" max="360" value="240" step="5"
+                        class="slider">
+                    <small class="form-text text-muted">You have selected <strong>no more than <span id="rangeDemo"
+                                value="240">240</span> minutes</strong> to prepare and cook the recipe.</small>
+                    <div class="line"></div>
+                    <!-- Search Button -->
+                    We love to find a test for your mood! &#160;&#160;
+                    <button type="submit" class="btn btn-dark btn-block mt-2" id="newRecipeSearchBtn"
+                        data-dismiss="modal">Search</button>
+                </form>
             </div>
         </div>
     </div>
