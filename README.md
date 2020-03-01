@@ -1,6 +1,6 @@
 # My Grocery Shop
 
-This app helps to avoid the west of food and increase the test of home cooking.
+`mygrocery.shop` This app helps to avoid the west of food and increase the test of home cooking.
 
 ## Getting Started
 
