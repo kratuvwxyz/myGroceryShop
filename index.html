@@ -136,7 +136,7 @@
       <!-- ! -->
     </div>
 
-    <!-- ! About Modal -->
+    <!-- ! CONTACT -- About Modal -->
     <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -152,6 +152,181 @@
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- ! Groceries Modals -->
+    <!-- add-leftover-modal 01  -->
+    <div class="modal fade view-list-02" id="add-leftover-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <h5 class="display-4">Your Grocery Leftover</h5>
+        <div class="modal-content p-4">
+          <div>
+            <br /><span class="h5">Check your fridge, pantry, or kitchen counter.</span>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times text-danger"></i></span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Laftover Grocery" aria-label="Leftover Grocery" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+          </div>
+          <div class="line"></div>
+          <div class="leftoveritemslist"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! RECIPE SEARCH Modals -->
+    <!-- add-to-list-01  -->
+    <div class="modal fade add-to-list-01" id="add-to-list-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <h5 class="display-4">Add To List</h5>
+        <div class="modal-content p-4">
+          <div>
+            <br /><span class="h5">To find the best result, please fill all inputs.</span>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times text-danger"></i></span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <!-- form starts -->
+          <form class="form-group">
+            <!-- MealType -->
+            <!-- <label for="Meal" class="h6title">Meal Type</label>
+                  <div class="mealType row"></div>
+                  <div class="line"></div> -->
+            <!-- 1 -->
+            <!-- Anything you have in mind to choose -->
+            <label for="userIngredients" class="h6title">Anything You Have In Your Mind To Cook</label>
+            <input type="text" class="form-control" id="userIngredients" aria-describedby="areaHelp" placeholder="For example tomato, cheese" style="background-color: #eeeeee" />
+            <small id="areaHelp" class="form-text text-muted p-2">A comma-separated list of ingredients that should/must be used in the recipes.</small>
+            <div class="line"></div>
+            <!-- 2 -->
+            <!-- DishType -->
+            <label for="Dish" class="h6title">Dish Type</label>
+            <div class="dishType"></div>
+            <div class="line"></div>
+            <!-- 3 -->
+            <!-- CuisionType -->
+            <label for="Cuision" class="h6title">Cuision Type</label>
+            <div class="cuisionType"></div>
+            <div class="line"></div>
+            <!-- 4 -->
+            <!-- Healthy Diet Options  -->
+            <label for="Diet" class="h6title">Healthy Diet Options</label>
+            <div class="dietType"></div>
+            <div class="line"></div>
+            <!-- 5 -->
+            <!-- Intolerances  -->
+            <label for="Health" class="h6title">Ingredient that the recipes must not contain</label>
+            <div class="specialRequest row"></div>
+            <!-- 6 -->
+            <label for="choiceNot"><strong>Any intolerance items that the recipes must not contain</strong></label>
+            <input type="text" class="form-control" id="userExcludeIng" aria-describedby="areaHelp" placeholder="For example Beef, Pork" style="background-color: #eeeeee" />
+            <small id="areaHelp" class="form-text text-muted"> A comma-separated list of ingredients or ingredient types that the recipes must not contain.</small>
+            <div class="line"></div>
+            <!-- 7 -->
+            <!-- Time Range -->
+            <label for="rangeTime" class="h6title">Time to prepare and cook the recipe</label>
+            <input type="range" name="timeRange" id="timeRange" min="5" max="360" value="240" step="5" class="slider" />
+            <small class="form-text text-muted"
+              >You have selected <strong>no more than <span id="rangeDemo" value="240">240</span> minutes</strong> to prepare and cook the recipe.</small
+            >
+            <div class="line"></div>
+            <!-- Search Button -->
+            We love to find a test for your mood! &#160;&#160;
+            <div class="d-grid mt-2"><button type="submit" class="btn btn-dark" id="newRecipeSearchBtn" data-dismiss="modal">Search</button></div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- view-list-02  -->
+    <div class="modal fade view-list-02" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <h5 class="display-4">Your Grocery Leftover</h5>
+        <div class="modal-content p-4">...</div>
+      </div>
+    </div>
+    <!-- lefover-recipe-03  -->
+    <div class="modal fade lefover-recipe-03" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <h5 class="display-4">Find Recipes from Leftover</h5>
+        <div class="modal-content p-4">...</div>
+      </div>
+    </div>
+    <!-- new-recipe-04  -->
+    <div class="modal fade new-recipe-04" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <!-- title  -->
+        <h5 class="display-4">Find New Recipes</h5>
+        <!-- content -->
+        <div class="modal-content p-4">
+          <div>
+            <br /><span class="h5">To find the best result, please fill all inputs.</span>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <!-- form starts -->
+          <form class="form-group">
+            <!-- MealType -->
+            <!-- <label for="Meal" class="h6title">Meal Type</label>
+                  <div class="mealType row"></div>
+                  <div class="line"></div> -->
+            <!-- 1 -->
+            <!-- Anything you have in mind to choose -->
+            <label for="choice" class="h6title">Anything You Have In Your Mind To Cook</label>
+            <input type="text" class="form-control" id="userIngredients" aria-describedby="areaHelp" placeholder="For example tomato, cheese" style="background-color: #eeeeee" />
+            <small id="areaHelp" class="form-text text-muted">A comma-separated list of ingredients that should/must be used in the recipes.</small>
+            <div class="line"></div>
+            <!-- 2 -->
+            <!-- DishType -->
+            <label for="Dish" class="h6title">Dish Type</label>
+            <div class="dishType"></div>
+            <div class="line"></div>
+            <!-- 3 -->
+            <!-- CuisionType -->
+            <label for="Cuision" class="h6title">Cuision Type</label>
+            <div class="cuisionType"></div>
+            <div class="line"></div>
+            <!-- 4 -->
+            <!-- Healthy Diet Options  -->
+            <label for="Diet" class="h6title">Healthy Diet Options</label>
+            <div class="dietType"></div>
+            <div class="line"></div>
+            <!-- 5 -->
+            <!-- Intolerances  -->
+            <label for="Health" class="h6title">Ingredient that the recipes must not contain</label>
+            <div class="specialRequest row"></div>
+            <!-- 6 -->
+            <label for="choiceNot"><strong>Any intolerance items that the recipes must not contain</strong></label>
+            <input type="text" class="form-control" id="userExcludeIng" aria-describedby="areaHelp" placeholder="For example Beef, Pork" style="background-color: #eeeeee" />
+            <small id="areaHelp" class="form-text text-muted"> A comma-separated list of ingredients or ingredient types that the recipes must not contain.</small>
+            <div class="line"></div>
+            <!-- 7 -->
+            <!-- Time Range -->
+            <label for="rangeTime" class="h6title">Time to prepare and cook the recipe</label>
+            <input type="range" name="timeRange" id="timeRange" min="5" max="360" value="240" step="5" class="slider" />
+            <small class="form-text text-muted"
+              >You have selected <strong>no more than <span id="rangeDemo" value="240">240</span> minutes</strong> to prepare and cook the recipe.</small
+            >
+            <div class="line"></div>
+            <!-- Search Button -->
+            We love to find a test for your mood! &#160;&#160;
+            <button type="submit" class="btn btn-dark btn-block mt-2" id="newRecipeSearchBtn" data-dismiss="modal">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- nutrition-05  -->
+    <div class="modal fade nutrition-05" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <h5 class="display-4">Nutition Check</h5>
+        <div class="modal-content p-4">...</div>
       </div>
     </div>
 

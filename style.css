@@ -1,175 +1,286 @@
 /* Menu ---------------------------------------------------------------- */
 
 #navbar {
-    padding: 15px 10px;
-    background: #FDEDB166;
-    background-repeat: repeat;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    width: 100vw;
-    z-index: 998;
+  padding: 15px 10px;
+  background: #fdedb166;
+  background-repeat: repeat;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100vw;
+  z-index: 998;
 }
 
 .background-image-1 {
-    background-image: url('./images/food.png');
-    background-repeat: repeat;
+  background-image: url("./images/food.png");
+  background-repeat: repeat;
 }
 
 .navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
+  box-shadow: none;
+  outline: none !important;
+  border: none;
 }
 
 .line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #BC5A33;
-    margin: 20px 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #bc5a33;
+  margin: 20px 0;
 }
 
 #sidebar {
-    width: 300px;
-    position: fixed;
-    top: 0;
-    left: -300px;
-    height: 100vh;
-    z-index: 999;
-    background: #BDC18E;
-    color: #312F1A;
-    transition: all 0.3s;
-    overflow: auto;
-    /* overflow-y: scroll; */
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  height: 100vh;
+  z-index: 999;
+  background: #bdc18e;
+  color: #312f1a;
+  transition: all 0.3s;
+  overflow: auto;
+  /* overflow-y: scroll; */
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 #sidebar.active {
-    left: 0;
+  left: 0;
 }
 
 #headOne {
-    display: block;
-    visibility: visible;
+  display: block;
+  visibility: visible;
 }
 
 #headOne.activeOne {
-    display: block;
-    visibility: hidden;
+  display: block;
+  visibility: hidden;
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #928246;
+  padding: 20px;
+  background: #928246;
 }
 
 #sidebar ul.components {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #928246;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #928246;
 }
 
 #sidebar ul p {
-    color: #fff;
-    padding: 10px;
-    margin: 10px 0;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
 }
 
 #sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
 }
 
 #sidebar ul li a:hover {
-    color: #BC5A33;
-    background: #D7D01D;
-    box-shadow: .25rem .25rem .5rem .05rem #312F1A66;
-    font-size: 1.25em;
-    -webkit-transition: font-size 1000ms linear;
-    -moz-transition: font-size 1000ms linear;
-    -o-transition: font-size 1000ms linear;
-    -ms-transition: font-size 1000ms linear;
-    transition: font-size 1000ms linear;
-    -webkit-transition: background-color 500ms ease-out;
-    -moz-transition: background-color 500ms ease-out;
-    -o-transition: background-color 500ms ease-out;
-    -ms-transition: background-color 500ms ease-out;
-    transition: background-color 500ms ease-out;
-    -webkit-transition: box-shadow 250ms ease-out;
-    -moz-transition: box-shadow 250ms ease-out;
-    -o-transition: box-shadow 250ms ease-out;
-    -ms-transition: box-shadow 250ms ease-out;
-    transition: box-shadow 250ms ease-out;
-    margin-top: -.075em;
-    margin-bottom: -.075em;
+  color: #bc5a33;
+  background: #d7d01d;
+  box-shadow: 0.25rem 0.25rem 0.5rem 0.05rem #312f1a66;
+  font-size: 1.25em;
+  -webkit-transition: font-size 1000ms linear;
+  -moz-transition: font-size 1000ms linear;
+  -o-transition: font-size 1000ms linear;
+  -ms-transition: font-size 1000ms linear;
+  transition: font-size 1000ms linear;
+  -webkit-transition: background-color 500ms ease-out;
+  -moz-transition: background-color 500ms ease-out;
+  -o-transition: background-color 500ms ease-out;
+  -ms-transition: background-color 500ms ease-out;
+  transition: background-color 500ms ease-out;
+  -webkit-transition: box-shadow 250ms ease-out;
+  -moz-transition: box-shadow 250ms ease-out;
+  -o-transition: box-shadow 250ms ease-out;
+  -ms-transition: box-shadow 250ms ease-out;
+  transition: box-shadow 250ms ease-out;
+  margin-top: -0.075em;
+  margin-bottom: -0.075em;
 }
 
-#sidebar ul li.active>a,
+#sidebar ul li.active > a,
 a[aria-expanded="true"] {
-    color: #FDEDB1;
-    background: #928246;
+  color: #fdedb1;
+  background: #928246;
 }
 
 a[data-toggle="collapse"] {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 
 ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #928246;
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #928246;
 }
 
 ul.CTAs {
-    padding: 20px;
+  padding: 20px;
 }
 
 ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 a.download {
-    background: #fff;
-    color: #312F1A;
+  background: #fff;
+  color: #312f1a;
 }
 
 a.article,
 a.article:hover {
-    background: #312F1A !important;
-    color: #fff !important;
+  background: #312f1a !important;
+  color: #fff !important;
 }
 
 .boxMenuAF {
-    color: #312F1A;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-right: 10px;
+  color: #312f1a;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 /* Parallax ---------------------------------------------------------------- */
 
 .jarallax-01 {
-    background-image: url('./images/bgFull.jpeg');
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("./images/bgFull.jpeg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Conent Style ---------------------------------------------------------------- */
+
+#content {
+  width: 100%;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+#sidebarCollapse1 {
+  border: none;
+  border-radius: 0;
+  text-align: left;
+}
+
+.centerMiddle {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.display-4 {
+  background: #312f1ae0;
+  color: #d5a052;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.h6title {
+  background: #bdc18e;
+  color: #312f1a;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.btnFooter {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #bdc18e;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin: 25px 0;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 45px;
+  height: 25px;
+  background: #312f1a;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 45px;
+  height: 25px;
+  background: #312f1a;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
+
+.close:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.close:not(:disabled):not(.disabled):hover,
+.close:not(:disabled):not(.disabled):focus {
+  opacity: 0.75;
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.modal-backdrop {
+  opacity: 0.85 !important;
 }
