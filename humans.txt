@@ -22,22 +22,31 @@
                             
 /* SITE */
 
-    Version: ...
+Version:
 
-                            
-    Last update: ...
+    - 2103292209
+    ☐ Last Update
 
-                                
-    Standards: ...
+Framework:
 
-                                
-    Components: ...
+    - 
 
-                                
-    Software: ...
+Built With:
 
+    - 
 
-    Version Control: GitHub
+Software:
+
+    - Visual Studio Code Editor
+    - Github for versioning
+
+Contributors:
+
+    - COC : https://github.com/kratuvwxyz/CONTRIBUTE
+
+License:
+
+    - MIT License : https://github.com/kratuvwxyz/LICENSE
 
 
 /* POWERED BY */
