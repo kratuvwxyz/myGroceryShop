@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <!--#
-        ╥╥  DESIGNED AND DEVELOPED BY...
+        ╥╥  DESIGNED AND DEVELOPED BY
         ║║ 
         ║║ ╓╓──╖╖ ╓╓──── ────╖╖ ╓╖ ╓╓──╖╖ ╓╓──╖╖ TM
         ║║ ║║  ║║ ║║         ║║ ╙╜ ║║  ║║ ║║  ║║
@@ -75,7 +75,8 @@
     <!-- Robots -->
     <!-- <meta name="robots" content="noindex, nofollow" /> -->
 
-    <!-- Google Fonts -->
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://desaign.app/clients/cli/css/normalize.css" />
 
     <!-- JQuery -->
     <script src="https://desaign.app/clients/cli/js/jquery.js" type="text/javascript"></script>
@@ -84,25 +85,62 @@
     <link rel="stylesheet" href="https://desaign.app/clients/cli/css/bootstrap.css" />
     <script src="https://desaign.app/clients/cli/js/bootstrap.js" type="text/javascript"></script>
 
-    <!-- Developer CSS -->
-    <link rel="stylesheet" href="" />
-    
-  </head>
-  
-  <body>
-    <div class="mainContainer">
+    <!-- Font Awesome -->
+    <script src="https://desaign.app/clients/cli/js/fontawesome5.js" type="text/javascript"></script>
 
+    <!-- Developer CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar Menu -->
+    <nav id="sidebar">
+      <!-- Logo Text -->
+      <div class="sidebar-header">
+        <h3>
+          <a href="index.html" class="text-uppercase text-dark text-decoration-none">&#160;My<br /><strong style="font-size: 1.5em">Grocery.</strong><br />&#160;Shop </a>
+        </h3>
+      </div>
+
+      <!-- Close Menu -->
+      <div class="d-grid">
+        <button type="button" id="sidebarCollapse1" class="btn btn-outline-dark rounded-0"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> &#160;CLOSE MENU</button>
+      </div>
+
+      <!-- Menu JQuery -->
+      <div id="jqMenu" class="jqMenu px-3 pb-5"></div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="mainContainer">
+      <!-- main page with parallax -->
+      <div class="jarallax-01">
+        <!-- Page Content  -->
+        <div id="content">
+          <!-- Top navbar -->
+          <nav id="navbar" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button type="button" id="sidebarCollapse" class="btn btn-dark ml-2">
+                <i class="fa fa-bars" aria-hidden="true" id="hamburgerBtn"></i>
+              </button>
+              <!-- heading H1 -->
+              <h1 id="headOne" class="pl-3 pt-2 pr-2 ls-lg">
+                <a href="index.html" class="text-dark text-decoration-none" style="text-shadow: -1px 1px 3px white"> MY<strong>GROCERY.</strong>SHOP </a>
+              </h1>
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
-    
+
     <!-- Footer -->
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5 ps-3" >
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5 ps-3">
       <a class="navbar-brand" href="https://desaign.app" style="font-size: 1rem !important">POWERED BY <span class="text-warning">DESAIGN.STUDIO</span></a>
     </nav>
-    
+
     <!-- Developer JavaScripts -->
-    <script src="https://desaign.app/clients/cli/javascript/desaign-loader/desaign-loader.js"></script>
-    <script src="" type="text/javascript"></script>
-    
+    <!-- <script src="https://desaign.app/clients/cli/javascript/desaign-loader/desaign-loader.js"></script> -->
+    <script src="./script.js" type="text/javascript"></script>
   </body>
-  
 </html>
