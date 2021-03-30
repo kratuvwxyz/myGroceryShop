@@ -44,9 +44,9 @@ ap = copy text string
 f = id that gose to ul string #
 h = show or hide
 */
-liMenu = (b, c, e, ap, f, h) => {
-    let jqmb = $('<li></li>').addClass('p-1').attr('id', b);
-    let jqmc = $('<a></a>').attr('href', c).text(ap).addClass('text-dark text-decoration-none');
+liMenu = (b, c, e, ap, f, h, i, j, k, l) => {
+    let jqmb = $('<li></li>').addClass('p-1').attr('id', b).attr('type', 'button');
+    let jqmc = $('<a></a>').attr('href', c).text(ap).addClass('text-dark text-decoration-none').attr(i,j).attr(k,l);
     let jqmd = $('<span></span>').addClass('boxMenuAF');
     let jqme = $('<i></i>').addClass(e).attr('area-hidden', 'true');
     // let jqmap = $('<p></p>')
@@ -106,7 +106,7 @@ liMenu('jqmNewSearch', '#', 'fas fa-share-square', 'From Leftover', '#jqmRecipes
 // search new recipes
 liMenu('jqmNewReci', '#', 'fas fa-search-plus', 'For New Test', '#jqmRecipes', 'show');
 // add your recipe
-liMenu('jqmYourReci', '#', 'fas fa-plus-circle', 'Add Reipe', '#jqmRecipes', 'show');
+liMenu('jqmYourReci', '#', 'fas fa-plus-circle', 'Add Recipe', '#jqmRecipes', 'show');
 // my recipe book
 liMenu('jqmReciBook', '#', 'fas fa-bookmark', 'My Recipe Book', '#jqmRecipes', 'show');
 // check nutrition
@@ -119,7 +119,7 @@ liMenu('jqmNutrition', '#', 'fas fa-chart-bar', 'Check Nutrition', '#jqmRecipes'
 // 
 ulMenu('jqmContact', 'Contact');
 // about an app
-liMenu('jqmAbout', '#about', 'fas fa-info-circle', 'About Us', '#jqmContact', 'show');
+liMenu('jqmAbout', '#about-modal', 'fas fa-info-circle', 'About Us', '#jqmContact', 'show', "data-bs-toggle", "modal", "data-bs-target", "#about-modal");
 // support for this app
 liMenu('jqmSupport', '#', 'fas fa-concierge-bell', 'Support', '#jqmContact', 'show');
 // rate this app

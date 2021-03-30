@@ -78,7 +78,7 @@
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.25em;
+    font-size: 1.1em;
     display: block;
 }
 
@@ -102,6 +102,8 @@
     -o-transition: box-shadow 250ms ease-out;
     -ms-transition: box-shadow 250ms ease-out;
     transition: box-shadow 250ms ease-out;
+    margin-top: -.075em;
+    margin-bottom: -.075em;
 }
 
 #sidebar ul li.active>a,
@@ -152,7 +154,6 @@ a.article:hover {
 }
 
 .boxMenuAF {
-    background: #D7D01D;
     color: #312F1A;
     width: 25px;
     height: 25px;
